@@ -1,0 +1,316 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.julie-header{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+    background: var(--white-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #AD58580F;
+    opacity: 1;
+    margin-bottom: 80px;
+}
+.julie-header-nav{
+    text-align: left;
+    font: 400 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #2D2777;
+    opacity: 1;
+}
+.julie-logo{
+    top: 27px;
+    width: 167px;
+    height: 35px;
+    background: transparent url('../images/Logo Juliedesk.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.julie-login{
+    background: var(--corail-ff6060) 0% 0% no-repeat padding-box;
+    background: #FF6060 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    opacity: 1;
+    color: #FFFFFF;
+    text-align: center;
+    font: 400 16px/25px Poppins;
+}
+.julie-banner{
+    top: 169px;
+    width: 100%;
+    height: 514px;
+    opacity: 1;
+    margin-bottom: 247px;
+}
+.julie-banner-left-header h1{
+    margin-top: 103px;
+    width: 624px;
+    height: 143px;
+    text-align: left;
+    font: 600 50px/54px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.julie-banner-left-header p{
+    text-align: left;
+    font: 300 20px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    top: 409px;
+    left: 96px;
+    width: 606px;
+    height: 142px;
+}
+.top35{
+    margin-top: 35px;
+}
+.btn-circle{
+    width: 192px;
+    height: 55px;
+    padding: 16px 24px;
+    border-radius: 28px;
+}
+.julie-banner-left-header .btn-freetrial{
+    background: transparent radial-gradient(closest-side at -6% 50%, #AC45F8 0%, #FF6060 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #B447E933;
+    border-radius: 28px;
+    opacity: 1;
+    width: 192px;
+    height: 55px;
+}
+.btn-freetrial:hover{
+    text-decoration: none;
+}
+.btn-freetrial-text{
+    text-align: center;
+    font: 400 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.btn-vedio{
+    background: #F5F5FD 0% 0% no-repeat padding-box;
+    top: 586px;
+    left: 312px;
+    width: 213px;
+    height: 55px;
+}
+.btn-vedio:hover{
+    text-decoration: none;
+}
+.btn-vedio-text{
+    text-align: center;
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.julie-banner-right-content img{position: absolute;left: -14%;}
+/*.julie-banner-rightimg{*/
+/*    top: 169px;*/
+/*    width: 708px;*/
+/*    height: 514px;*/
+/*    background: transparent url('../images/illu.png') 0% 0% no-repeat padding-box;*/
+/*    opacity: 1;*/
+/*}*/
+
+.trustus{
+    text-align: center;
+    font: 700 40px/40px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.trustusimg > img{    width: 90px;
+    height: 90px;}
+.trustusbottom156{
+    margin-bottom: 156px;
+}
+.whatWedo{
+    text-align: center;
+    font: 600 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #A6ADBA;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.ourServices{
+    color: var(--darker-381a4b);
+    text-align: center;
+    font: 700 40px/40px Poppins;
+    letter-spacing: 0px;
+    margin-bottom: 129px;
+}
+.textBrown{color: #471E60;}
+.textPurpel{color: #AC45F8;}
+.cmpa{
+    text-align: left;
+    font: 700 24px/40px Montserrat;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.communityManagement li a{
+    margin-left: 35px;
+    text-align: left;
+    font: 400 16px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.pasevices li a{
+    margin-left: 35px;
+    text-align: left;
+    font: 400 16px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.communityManagement > li{
+    margin: 20px 0px;
+    background: transparent url('../images/checkmark-circle-2.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.pasevices > li{
+    margin: 20px 0px;
+    background: transparent url('../images/checkmark-circle-2.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.margingTop152{margin-top: 152px;}
+.testimonials{
+    z-index: -1;
+    background: transparent url('../images/Testimonial - Background.png') 0% 0% no-repeat padding-box;
+    height: 724px;
+    left: 0px;
+    width: 1440px;
+}
+.teddy p{width: 468px;height: 163px;}
+.teddy img{width: 593px;height: 528px;}
+.paul{width: 525px;
+    height: 151px;}
+.carousel{
+    width: 612px;
+    height: 262px;
+    background: var(--white-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 50px #AC45F81A;
+    border-radius: 12px;
+    opacity: 1;
+}
+.hrdown{
+    background: transparent linear-gradient(270deg, #FF6060 0%, #7B31B2 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 4px;
+}
+/*.julie-footertop{*/
+/*    top: 4373px;*/
+/*    left: 0px;*/
+/*    width: 1440px;*/
+/*    height: 4px;*/
+/*    background: transparent linear-gradient(270deg, var(--corail-ff6060) 0%, var(--purple-5d67b4) 100%) 0% 0% no-repeat padding-box;*/
+/*    background: transparent linear-gradient(270deg, #FF6060 0%, #7B31B2 100%) 0% 0% no-repeat padding-box;*/
+/*    opacity: 1;*/
+/*}*/
+.julie-footertop h5{
+    text-align: left;
+    font: 500 18px/56px Rubik;
+    letter-spacing: 0px;
+    color: #471E60;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+
+#demo {
+    /*background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%);*/
+    max-width: 900px;
+    margin: auto
+}
+
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 2rem 3rem;
+    text-align: left;
+    font: Italic 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #596372;
+    opacity: 1;
+}
+
+@media(max-width:767px) {
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+}
+
+.carousel-caption img {
+    width: 4rem;
+    border-radius: 5rem;
+    margin-top: 2rem
+}
+.carousel-caption span{text-align: left;
+    font: 500 12px/24px Poppins;
+    letter-spacing: 0px;
+    color: #A6ADBA;
+    text-transform: uppercase;
+    opacity: 1;}
+@media(max-width:767px) {
+    .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem
+    }
+}
+
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem
+}
+
+@media(max-width:767px) {
+    #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem
+    }
+}
+
+i {
+    background-color: rgb(223, 56, 89);
+    padding: 1.4rem
+}
+
+@media(max-width:767px) {
+    i {
+        padding: 0.8rem
+    }
+}
+
+.carousel-control-prev {
+    justify-content: flex-start
+}
+
+.carousel-control-next {
+    justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset
+}
