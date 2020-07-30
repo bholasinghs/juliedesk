@@ -4,8 +4,6 @@ html, body {
     padding:0;
 }
 .julie-header{
-    top: 0px;
-    left: 0px;
     width: 100%;
     height: 90px;
     background: var(--white-ffffff) 0% 0% no-repeat padding-box;
@@ -22,7 +20,6 @@ html, body {
     opacity: 1;
 }
 .julie-logo{
-    top: 27px;
     width: 167px;
     height: 35px;
     background: transparent url('../images/Logo Juliedesk.png') 0% 0% no-repeat padding-box;
@@ -38,7 +35,6 @@ html, body {
     font: 400 16px/25px Poppins;
 }
 .julie-banner{
-    top: 169px;
     width: 100%;
     height: 514px;
     opacity: 1;
@@ -60,8 +56,6 @@ html, body {
     letter-spacing: 0px;
     color: #471E60;
     opacity: 1;
-    top: 409px;
-    left: 96px;
     width: 606px;
     height: 142px;
 }
@@ -93,8 +87,6 @@ html, body {
 }
 .btn-vedio{
     background: #F5F5FD 0% 0% no-repeat padding-box;
-    top: 586px;
-    left: 312px;
     width: 213px;
     height: 55px;
 }
@@ -108,24 +100,15 @@ html, body {
     color: #471E60;
     opacity: 1;
 }
-.julie-banner-right-content img{position: absolute;left: -14%;}
-/*.julie-banner-rightimg{*/
-/*    top: 169px;*/
-/*    width: 708px;*/
-/*    height: 514px;*/
-/*    background: transparent url('../images/illu.png') 0% 0% no-repeat padding-box;*/
-/*    opacity: 1;*/
-/*}*/
 
-.trustus{
+.trustus h1{
     text-align: center;
     font: 700 40px/40px Poppins;
     letter-spacing: 0px;
     color: #471E60;
     opacity: 1;
 }
-.trustusimg > img{    width: 90px;
-    height: 90px;}
+.trustus img{ width: 90px; height: 90px; margin-top: 30px;}
 .trustusbottom156{
     margin-bottom: 156px;
 }
@@ -144,8 +127,21 @@ html, body {
     letter-spacing: 0px;
     margin-bottom: 129px;
 }
+.feeback{
+    text-align: center;
+    font: Bold 40px/60px Poppins;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-bottom: 50px;
+}
 .textBrown{color: #471E60;}
 .textPurpel{color: #AC45F8;}
+.hrtop{
+    background: transparent linear-gradient(315deg, #FF6060 0%, #AC45F8 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px 4px 0px 0px;
+    opacity: 1;
+    height: 6px;
+}
 .cmpa{
     text-align: left;
     font: 700 24px/40px Montserrat;
@@ -153,45 +149,154 @@ html, body {
     color: #471E60;
     opacity: 1;
 }
-.communityManagement li a{
-    margin-left: 35px;
+.dots{
+    background: transparent linear-gradient(326deg, #FF6060 0%, #AC45F8 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+}
+.serviceslistsMain:hover{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 50px #AC45F81A;
+    opacity: 1;
+}
+.serviceslistsMain .button{
+    background: #FF6060 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #FF606033;
+    border-radius: 28px;
+    opacity: 1;
+    width: 124px;
+    height: 55px;
+    margin-top: 30px;
+}
+.serviceslistsMain .button p{
     text-align: left;
-    font: 400 16px/20px Montserrat;
+    font: 500 16px/25px Poppins;
     letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 10px 7px
+}
+.serviceslists {
     color: #471E60;
     opacity: 1;
+    height: 48px;
 }
-.pasevices li a{
-    margin-left: 35px;
+.serviceslists span{
     text-align: left;
-    font: 400 16px/20px Montserrat;
+    font: 500 16px/20px Montserrat;
     letter-spacing: 0px;
-    color: #471E60;
-    opacity: 1;
-}
-.communityManagement > li{
-    margin: 20px 0px;
-    background: transparent url('../images/checkmark-circle-2.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-.pasevices > li{
-    margin: 20px 0px;
-    background: transparent url('../images/checkmark-circle-2.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
 }
 
+.personalAssistantLeft img{
+    width: 593px;
+    height: 528px;
+}
+.personalAssistantRight{
+    padding-left: 80px;
+    padding-top: 104px;
+}
+.personalAssistant h1{
+    text-align: left;
+    font: 700 32px/26px Poppins;
+    letter-spacing: 0px;
+    color: #4C2C64;
+    opacity: 1;
+}
+.personalAssistant h6{
+    text-align: left;
+    font: 600 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.personalAssistant p{
+    text-align: left;
+    font: 400 16px/27px Poppins;
+    letter-spacing: 0px;
+    color: #2C3439;
+    opacity: 1;
+}
+.personalAssistant .button{
+    background: #FF6060 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #FF606033;
+    border-radius: 28px;
+    opacity: 1;
+    width: 138px;
+    height: 55px;
+    margin-top: 30px;
+}
+.personalAssistant .button p{
+    text-align: left;
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 10px 7px
+}
+
+
+.communityManagerRight img{
+    width: 477px;
+    height: 352px;
+}
+.communityManagerLeft{
+    /*padding-left: 80px;*/
+    /*padding-top: 104px;*/
+}
+.communityManager h1{
+    text-align: left;
+    font: 700 32px/26px Poppins;
+    letter-spacing: 0px;
+    color: #4C2C64;
+    opacity: 1;
+}
+.communityManager h6{
+    text-align: left;
+    font: 600 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.communityManager p{
+    text-align: left;
+    font: 400 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #2C3439;
+    opacity: 1;
+}
+.communityManager .button{
+    background: #5045CE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #FF606033;
+    border-radius: 28px;
+    opacity: 1;
+    width: 138px;
+    height: 55px;
+    margin-top: 30px;
+}
+.communityManager .button p{
+    text-align: left;
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 10px 7px
+}
+
+
+.imgs img{margin-right: 21px;}
 .margingTop152{margin-top: 152px;}
 .testimonials{
     z-index: -1;
-    background: transparent url('../images/Testimonial - Background.png') 0% 0% no-repeat padding-box;
+    background-image: url('../images/Testimonial - Background.png');
     height: 724px;
-    left: 0px;
-    width: 1440px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.teddy p{width: 468px;height: 163px;}
-.teddy img{width: 593px;height: 528px;}
-.paul{width: 525px;
-    height: 151px;}
+
 .carousel{
     width: 612px;
     height: 262px;
@@ -223,10 +328,39 @@ html, body {
     text-transform: uppercase;
     opacity: 1;
 }
+.julie-footertop p{
+    text-align: left;
+    font: 600 16px/24px Muli;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.julie-footertop ul li{
+    margin-bottom: 18px;
+}
+.julie-footertop ul li a{
+    text-align: left;
+    font: 600 16px/24px Muli;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;}
+
+.julie-footertop-copyright{
+    background: #AC45F8 0% 0% no-repeat padding-box;
+    opacity: 0.04;
+    height: 72px;
+    margin-bottom: -40px;
+}
+.julie-footertop-copyright p{
+    text-align: left;
+    font: 600 16px/56px Muli;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1!important;
+}
 
 
-
-#demo {
+#carouselFeed {
     /*background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%);*/
     max-width: 900px;
     margin: auto
@@ -242,8 +376,123 @@ html, body {
     color: #596372;
     opacity: 1;
 }
+.carousel-indicators{
+    top: 329px;
+}
+.carousel-indicators li{
+    background-color: coral;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.founderText{
+    margin-top: 38px;
+    margin-bottom: 3px;
+    text-align: left;
+    font: 500 20px/24px Poppins;
+    letter-spacing: 0px;
+    color: #1F1B4E;
+    opacity: 1;
+}
+.foundationText{
+    text-align: left;
+    font: 500 9px/18px Poppins;
+    letter-spacing: 0px;
+    color: #A6ADBA;
+    text-transform: uppercase;
+    opacity: 1;
+}
 
-@media(max-width:767px) {
+
+.carousel-caption img {
+    width: 4rem;
+    border-radius: 5rem;
+    margin-top: 2rem
+}
+.carousel-caption span{
+    text-align: left;
+    font: 500 12px/24px Poppins;
+    letter-spacing: 0px;
+    color: #A6ADBA;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+@media(max-width:768px) {
+    .julie-header{
+        width: auto;
+    }
+    .navbar-toggler{
+        background-color: #FF6060;
+        margin-top: -22px;
+    }
+    .justify-content-end{
+        z-index: 1;
+    }
+    .navbar-nav{
+        background-color: #ffffff;
+    }
+    .julie-logo{
+        width: 177px;
+        height: 58px;
+    }
+    #dropdownMenuLink{
+        margin-left: -11px;
+    }
+    .julie-banner{
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .julie-banner-left-header h1{
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+    }
+    .julie-banner-left-header p{
+        width: 100%;
+        height: auto;
+    }
+    .julie-banner-left-header .btn-freetrial{
+        width: 100%;
+        height: auto;
+        margin-top: 39px;
+        margin-left: 39px;
+    }
+    .personalAssistant .button, .serviceslistsMain .button{
+        margin: 30px 64px
+    }
+    .btn-vedio{
+        margin: 35px;
+        float: left;
+    }
+    .trustus h1{
+        margin-top: 100px;
+    }
+    .personalAssistantLeft img, .communityManagerRight img, #carouselFeed{
+        width: 100%;
+        height: auto;
+    }
+    .trustusbottom156{
+        margin-top: 40px;
+    }
+    .personalAssistantRight {
+        padding-left: 15px;
+        padding-top: 0;
+    }
+    .margingTop152{
+        margin-top: 100px;
+    }
+    .serviceslistsMain{
+        margin-bottom: 50px;
+    }
+    .communityManager .button{
+        margin: 64px;
+    }
+    .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem
+    }
     .carousel-caption {
         position: initial;
         z-index: 10;
@@ -255,62 +504,19 @@ html, body {
         font-weight: bold;
         line-height: 1.5rem
     }
-}
-
-.carousel-caption img {
-    width: 4rem;
-    border-radius: 5rem;
-    margin-top: 2rem
-}
-.carousel-caption span{text-align: left;
-    font: 500 12px/24px Poppins;
-    letter-spacing: 0px;
-    color: #A6ADBA;
-    text-transform: uppercase;
-    opacity: 1;}
-@media(max-width:767px) {
-    .carousel-caption img {
-        width: 4rem;
-        border-radius: 4rem;
-        margin-top: 1rem
+    .carousel-indicators{
+        top: 430px;
     }
-}
-
-#image-caption {
-    font-style: normal;
-    font-size: 1rem;
-    margin-top: 0.5rem
-}
-
-@media(max-width:767px) {
-    #image-caption {
-        font-style: normal;
-        font-size: 0.6rem;
-        margin-top: 0.5rem
+    .hrdown{margin-top: 100px;}
+    .julie-footertop h5 {
+        text-align: center;
     }
-}
-
-i {
-    background-color: rgb(223, 56, 89);
-    padding: 1.4rem
-}
-
-@media(max-width:767px) {
-    i {
-        padding: 0.8rem
+    .julie-footertop-copyright{
+        height: 96px;
+        margin-bottom: -72px
     }
-}
+    .julie-footertop p, .founderText, .foundationText{
+        text-align: center;
+    }
 
-.carousel-control-prev {
-    justify-content: flex-start
-}
-
-.carousel-control-next {
-    justify-content: flex-end
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    transition: none;
-    opacity: unset
 }
