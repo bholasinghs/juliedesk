@@ -3,10 +3,12 @@ html, body {
     margin:0;
     padding:0;
 }
+.nav-item{
+    margin-right: 27px;
+}
 .julie-header{
     width: 100%;
     height: 90px;
-    background: var(--white-ffffff) 0% 0% no-repeat padding-box;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 20px #AD58580F;
     opacity: 1;
@@ -19,6 +21,109 @@ html, body {
     color: #2D2777;
     opacity: 1;
 }
+.julie-header-nav:hover{
+    color: #FF6060 !important;
+}
+
+
+.dropdown-service:hover>.dropdown-menu {
+    display: block;
+    /*margin-top: 53px;*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #2D277729;
+    border-radius: 6px;
+    opacity: 1;
+    border: none;
+    width: 426px;
+    height: 503px;
+    left: -174px;
+}
+.dropdown-service .dropdown-item .dp-inner-pad{padding-left: 25px;}
+.dropdown-service .dropdown-item{
+    opacity: 1;
+    width: 395px;
+    height: 98px;
+    margin-left: 15px;
+    margin-top: 12px;
+    margin-right: 16px;
+    white-space: inherit;
+}
+.dropdown-service .dropdown-item h5{text-align: left;
+    font: 600 16px/16px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;}
+.dropdown-service .dropdown-item h6{
+    text-align: left;
+    font: 500 12px/16px Montserrat;
+    letter-spacing: 0px;
+    color: #FF6060;
+}
+.dropdown-service .dropdown-item p{
+    text-align: left;
+    font: 300 12px/16px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    width: 236px;
+    height: 33px;
+}
+
+.dropdown-service>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.c-box {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-size: 150%;
+    text-align: center;
+    color: #fff;
+    flex-basis: 30%;
+    /*padding: 5vmin;*/
+    /*margin: 5vmin;*/
+}
+.c-box--arrow-top {
+    position: relative;
+    z-index: 10;
+}
+.c-box--arrow-top::after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    border: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    /*margin-left: -10px;*/
+    left: 50%;
+    border-bottom: 10px solid #FFFFFF;
+    top: -10px;
+}
+.connect{
+    border: 1px solid #FF6060;
+    border-radius: 28px;
+    opacity: 0.3;
+    width: 184px;
+    height: 42px;
+    text-align: center;
+    float: left;
+    margin-left: 41px;
+}
+.connect-span{
+    text-align: center;
+    font: 600 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    opacity: 1;
+}
+
+
+
+
+
+
 .julie-logo{
     width: 167px;
     height: 35px;
@@ -68,13 +173,16 @@ html, body {
     padding: 16px 24px;
     border-radius: 28px;
 }
-.julie-banner-left-header .btn-freetrial{
-    background: transparent radial-gradient(closest-side at -6% 50%, #AC45F8 0%, #FF6060 100%) 0% 0% no-repeat padding-box;
+.julie-banner-left-header .btn-freetrial{ 
+    background-image: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
+    -webkit-linear-gradient: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
+    /*background: radial-gradient(closest-side at -6% 50%, #AC45F8 0%, #FF6060 100%);*/
     box-shadow: 0px 3px 20px #B447E933;
     border-radius: 28px;
     opacity: 1;
     width: 192px;
     height: 55px;
+    margin-right: 24px;
 }
 .btn-freetrial:hover{
     text-decoration: none;
@@ -136,12 +244,8 @@ html, body {
 }
 .textBrown{color: #471E60;}
 .textPurpel{color: #AC45F8;}
-.hrtop{
-    background: transparent linear-gradient(315deg, #FF6060 0%, #AC45F8 100%) 0% 0% no-repeat padding-box;
-    border-radius: 4px 4px 0px 0px;
-    opacity: 1;
-    height: 6px;
-}
+
+
 .cmpa{
     text-align: left;
     font: 700 24px/40px Montserrat;
@@ -159,6 +263,17 @@ html, body {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 20px 50px #AC45F81A;
     opacity: 1;
+
+    border-top: 6px solid;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-radius: 4px 4px 0px 0px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
+    -webkit-linear-gradient: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
+
 }
 .serviceslistsMain .button{
     background: #FF6060 0% 0% no-repeat padding-box;
