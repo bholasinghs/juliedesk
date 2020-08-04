@@ -24,6 +24,9 @@ html, body {
 .julie-header-nav:hover{
     color: #FF6060 !important;
 }
+.active{
+    color: #FF6060 !important;
+}
 
 
 .dropdown-service:hover>.dropdown-menu {
@@ -47,6 +50,7 @@ html, body {
     margin-top: 12px;
     margin-right: 16px;
     white-space: inherit;
+    padding-top: 11px;
 }
 .dropdown-service .dropdown-item h5{text-align: left;
     font: 600 16px/16px Poppins;
@@ -64,10 +68,17 @@ html, body {
     letter-spacing: 0px;
     color: #471E60;
     opacity: 1;
-    width: 236px;
+    width: 272px;
     height: 33px;
 }
-
+.dropdown-service .dropdown-item.active, .dropdown-item:active{
+    border-radius: 10px;
+    background-color: #ffe6ea;
+}
+.dropdown-service .dropdown-item:hover{
+    background-color: #ffe6ea;
+    border-radius: 10px;
+}
 .dropdown-service>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
@@ -110,6 +121,7 @@ html, body {
     text-align: center;
     float: left;
     margin-left: 41px;
+    margin-top: 5px;
 }
 .connect-span{
     text-align: center;
@@ -173,7 +185,7 @@ html, body {
     padding: 16px 24px;
     border-radius: 28px;
 }
-.julie-banner-left-header .btn-freetrial{ 
+.btn-freetrial{
     background-image: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
     -webkit-linear-gradient: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
     /*background: radial-gradient(closest-side at -6% 50%, #AC45F8 0%, #FF6060 100%);*/
@@ -229,7 +241,6 @@ html, body {
     opacity: 1;
 }
 .ourServices{
-    color: var(--darker-381a4b);
     text-align: center;
     font: 700 40px/40px Poppins;
     letter-spacing: 0px;
@@ -263,7 +274,6 @@ html, body {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 20px 50px #AC45F81A;
     opacity: 1;
-
     border-top: 6px solid;
     -moz-border-radius-topleft: 4px;
     -moz-border-radius-topright: 4px;
@@ -532,6 +542,316 @@ html, body {
     text-transform: uppercase;
     opacity: 1;
 }
+/**************************************** packages *************************************************************************/
+.pricingBtn{
+    padding-top: 8px!important;
+    margin-right: -6px!important;
+}
+.margingTopBottom114{
+    margin-top: 114px!important;
+    margin-bottom: 114px!important;
+}
+.home-container {
+    margin: 0 auto;
+    height: 694px;
+    background: radial-gradient(116% 24% at top,transparent 47%,#FAF0FF 0)
+}
+.home-cards{
+    background-color: transparent;
+}
+.package-main-container{
+    padding-top: 20px;
+    width: 1067px;
+    height: 588px;
+}
+.packagesHead{
+    text-align: center;
+    font: 600 50px/58px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    width: 988px;
+    height: 140px;
+}
+.packagesHead-p{
+    text-align: center;
+    font: 300 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    width: 988px;
+    height: 49px;
+}
+.card-img-top{
+    border: none;
+    width: 210px;
+    height: 210px;
+}
+.packages-card-title{
+    text-align: center;
+    font: 600 28px/34px Poppins;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.packages-card-text{
+    text-align: center;
+    font: 300 16px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #2D2777;
+    opacity: 1;
+}
+.package-card-footer{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+.packages-cards-footer{
+    background-color: transparent;
+    border: none;
+    text-align: left;
+}
+.card-pack-block{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 50px #AC45F81A;
+    border-radius: 4px;
+    opacity: 1;
+}
+.card-teddy{
+    background: #2BD0C7 0% 0% no-repeat padding-box;
+    border-radius: 4px 4px 0px 0px;
+    height: 6px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+.card-violetta{
+    background: #AC45F8 0% 0% no-repeat padding-box;
+    /*border-image-source: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);*/
+    border-radius: 4px 4px 0px 0px;
+    height: 6px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+.card-julie{
+    background: linear-gradient(313deg, #FF6060 0%, #AC45F8 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px 4px 0px 0px;
+    height: 6px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+.card-head-name{
+    text-align: left;
+    font: 500 38px/20px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    height: 50px;
+    margin-bottom: 7px;
+}
+.pound{
+    width: 14px;
+    display: inline-flex;
+}
+.card-head-price{
+    text-align: left;
+    font: 700 48px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #471E60;
+    display: inline-flex;
+    width: 122px;
+}
+.card-head-des{
+    text-align: left;
+    font: 400 18px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #471E60;
+    margin-top: -49px;
+    margin-bottom: 49px;
+}
+.package-button {
+    background: #FF6060 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    width: 148px;
+    height: 55px;
+    padding: 16px 24px;
+}
+.package-button span{
+    text-align: center;
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.package-button:hover {text-decoration: none;}
+.mostpopular{
+    margin-top: 30px;
+    margin-bottom: 1px;
+}
+.mostpopular-button{
+    background: #F5F0F9 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    padding: 12px 22px;
+}
+.mostpopular-button span{
+    text-align: center;
+    font: 500 16px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.mostpopular-button:hover {text-decoration: none;}
+.listshead{
+    text-align: left;
+    font: 600 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #B082CC;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-bottom: 18px;
+}
+.listsbody{
+    margin-bottom: 20px;
+}
+.listsbody p{
+    text-align: left;
+    font: 500 16px/20px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    padding-top: 3px;
+}
+.creditdetails-head{
+    text-align: left;
+    font: 600 16px/24px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.creditdetails-desc{
+    text-align: left;
+    font: 400 16px/24px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.enterprise{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 6px;
+    border-image-source: linear-gradient(313deg, #FF6060 0%, #AC45F8 100%);
+    -webkit-linear-gradient: linear-gradient(313deg, #FF6060 0%, #AC45F8 100%);
+    height: 296px;
+    background-clip: padding-box;
+    position: relative;
+    margin-bottom: 202px;
+    width: 1440px;
+}
+.enterprise::after {
+    position: absolute;
+    top: -6px; bottom: -6px;
+    left: -6px; right: -6px;
+    background: linear-gradient(313deg, #FF6060 0%, #AC45F8 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 6px;
+}
+.enterprise-h5{
+    text-align: left;
+    font: 600 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 28px;
+    padding-left: 75px;
+    padding-bottom: 4px;
+}
+.enterprise-head{
+    text-align: left;
+    font: 400 24px/21px Poppins;
+    letter-spacing: 0px;
+    color: #1F1B4E;
+    opacity: 1;
+    height: 33px;
+    padding-left: 75px;
+}
+.enterprise-body{
+    text-align: left;
+    font: 300 16px/24px Poppins;
+    letter-spacing: 0px;
+    color: #1F1B4E;
+    opacity: 1;
+    width: 671px;
+    padding-left: 75px;
+    margin-bottom: 27px;
+}
+.enterprise-img{
+    position: absolute;
+    left: -103px;
+    top: -30px;
+}
+.enterprise-btn{
+    margin-left: 67px;
+}
+.comparsion-topBottom-margin{
+    margin-top: 121px !important;
+    margin-bottom: 262px !important;
+}
+.comparsion-table{
+    text-align: center;
+}
+.comparsion-table tr td{
+    width: 312px;
+    height: 67px;
+    border: 1px solid rgba(205, 210, 219, 0.61);
+}
+.option{
+    text-align: left;
+    font: 500 16px/28px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    padding: 23px 0px 21px 26px;
+}
+.comparsion-table-packname{
+    font: 500 28px/20px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.comparsion-table-price-symbol {
+    font: 700 18px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #7B31B2;
+}
+.comparsion-table-price{
+    font: 700 32px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #7B31B2;
+}
+.comparsion-table-desc{
+    font: 400 18px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #596372;
+    opacity: 1;
+}
+.crossCol{
+    color: #FF6060;
+    font-size: 21px;
+}
+.checkCol{
+    color: #78E295;
+    font-size: 21px;
+}
+.tblSmall{
+    text-align: left;
+    font: 500 12px/18px Poppins;
+    letter-spacing: 0px;
+    color: #596372;
+    opacity: 1;
+}
+/*****************************************************************************************************************/
+
+/*****************************************************************************************************************/
+
 
 @media(max-width:768px) {
     .julie-header{
@@ -633,5 +953,17 @@ html, body {
     .julie-footertop p, .founderText, .foundationText{
         text-align: center;
     }
-
+/******************************************************************************/
+    .packagesHead, .packagesHead-p, .package-main-container, .home-container, .enterprise, .enterprise-h5, .enterprise-head, .enterprise-body{
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+    .enterprise-img {
+        position: relative;
+        left: 0;
+        top: 0px;
+        width: 94%;
+        margin-top: 50px;
+    }
 }
