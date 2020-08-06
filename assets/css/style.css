@@ -1158,6 +1158,15 @@ html, body {
     opacity: 1;
 }
 /************************************************ Buttons *****************************************************************/
+.textGreen{
+    color: #19C3B9;
+}
+.greenBackground{
+    background-color: #19C3B9;
+}
+.deepGreenBackground{
+    background-color: #219D96;
+}
 .purpelBackground{
     background-color: #AC45F8;
 }
@@ -1181,6 +1190,65 @@ html, body {
     opacity: 1;
 }
 .mainBtn:hover {text-decoration: none;}
+/*********************************************** Teddy ******************************************************************/
+.secondImg{
+    position: absolute;
+    left: 19px;
+    top: 121px;
+}
+.teddy-top-heading-h1{
+    font: 500 28px/38px Poppins;
+    letter-spacing: 0px;
+    color: #4C2C64;
+    opacity: 1;
+}
+.teddy-top-heading-desc{
+    font: 400 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+}
+.teddy-top-heading-desc-green{
+    font: 500 Italic 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #19C3B9;
+}
+.width476{
+    width: 476px;
+}
+.marginTopBottom120{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.autofollow-desc{
+    text-align: left;
+    font: 400 18px/24px Poppins;
+    letter-spacing: 0px;
+    color: #2C3439;
+    opacity: 1;
+}
+.marginTop66{
+    margin-top: 66px;
+}
+.teddy-matrix-desc{
+    font: 400 16px/24px Poppins;
+    letter-spacing: 0px;
+    color: #2C3439;
+    opacity: 1;
+}
+.matrix-img1{
+    width: 374px;
+    height: 326px;
+    float: right;
+    margin-right: 10px;
+}
+.matrix-img2{
+    top: 4px;
+    width: 432px;
+    height: 333px;
+    position: absolute;
+    left: 106px;
+
+}
 /*****************************************************************************************************************/
 
 
@@ -1343,7 +1411,7 @@ html, body {
         width: 48%;
     }
     /*********************************************************************************/
-    .packs-head-h1, .packs-assist-h1-top-bottom, .julie-head-desc,.top35,.julie-head-imgs,.julie-assist-para,.violetta-head-desc{
+    .packs-head-h1, .packs-assist-h1-top-bottom, .julie-head-desc,.top35,.julie-head-imgs,.julie-assist-para,.violetta-head-desc,.width476,.teddy-top-heading-h1,.autofollow-desc,.matrix-img1,.matrix-img2,.teddy-matrix-desc{
         text-align: center!important;
         width: 100%;
         height: auto;
@@ -1377,5 +1445,8 @@ html, body {
     .mobSize30{
         width: 34px!important;
         height: 34px!important;
+    }
+    .matrix-img2{
+        left: inherit;
     }
 }
