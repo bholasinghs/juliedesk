@@ -581,6 +581,7 @@ html, body {
     text-align: center;
     font: 600 28px/34px Poppins;
     letter-spacing: 0px;
+    color: #2D2777;
     opacity: 1;
 }
 .packages-card-text{
@@ -1039,22 +1040,43 @@ html, body {
     height: 90px;
     margin-top: 30px;
 }
-/**************************************** Julie *************************************************************************/
-.julie-discover-h1{
-    text-align: center;
-    font: Bold 40px/40px Poppins;
-    letter-spacing: 0px;
-}
-.julie-head-h1{
+/**************************************** Packs Universal *************************************************************************/
+.packs-header-h1{
     text-align: left;
     font: 600 50px/60px Poppins;
     letter-spacing: 0px;
-    color: #FF6060;
     opacity: 1;
-    width: 403px;
-    height: 71px;
+}
+.packs-header-assist-h1{
+    text-align: center;
+    font: 700 40px/40px Poppins;
+    letter-spacing: 0px;
+}
+.packs-assist-h1-top-bottom{
+    font: 500 28px/26px Poppins;
+    letter-spacing: 0px;
+    color: #4C2C64;
+    opacity: 1;
+}
+.margintop118{
     margin-top: 118px;
 }
+/**************************************** Julie *************************************************************************/
+/*.julie-discover-h1{*/
+/*    text-align: center;*/
+/*    font: Bold 40px/40px Poppins;*/
+/*    letter-spacing: 0px;*/
+/*}*/
+/*.julie-head-h1{*/
+/*    text-align: left;*/
+/*    font: 600 50px/60px Poppins;*/
+/*    letter-spacing: 0px;*/
+/*    color: #FF6060;*/
+/*    opacity: 1;*/
+/*    width: 403px;*/
+/*    height: 71px;*/
+/*    margin-top: 118px;*/
+/*}*/
 .julie-head-desc{
     text-align: left;
     font: 300 20px/28px Montserrat;
@@ -1068,11 +1090,14 @@ html, body {
     width: 580px;
     height: 540px;
 }
-.juile-assist-h1-top-bottom{
-    font: 500 28px/26px Poppins;
-    letter-spacing: 0px;
-    color: #4C2C64;
-    opacity: 1;
+/*.juile-assist-h1-top-bottom{*/
+/*    font: 500 28px/26px Poppins;*/
+/*    letter-spacing: 0px;*/
+/*    color: #4C2C64;*/
+/*    opacity: 1;*/
+/*}*/
+.margintop178{
+    margin-top: 178px;
 }
 .margintop86{
     margin-top: 86px;
@@ -1084,6 +1109,9 @@ html, body {
     margin-top: 109px;
 }
 .margintop123{
+    margin-top: 123px;
+}
+.margintop140{
     margin-top: 123px;
 }
 .julie-assist-para{
@@ -1113,15 +1141,15 @@ html, body {
     margin-bottom: 116px;
 }
 /********************************************* Violetta ********************************************************************/
-.violetta-head-h1{
-    text-align: left;
-    font: 600 50px/60px Poppins;
-    letter-spacing: 0px;
-    color: #7B31B2;
-    opacity: 1;
-    width: 485px;
-    height: 71px;
-}
+/*.violetta-head-h1{*/
+/*    text-align: left;*/
+/*    font: 600 50px/60px Poppins;*/
+/*    letter-spacing: 0px;*/
+/*    color: #7B31B2;*/
+/*    opacity: 1;*/
+/*    width: 485px;*/
+/*    height: 71px;*/
+/*}*/
 .violetta-head-desc{
     text-align: left;
     font: 300 20px/28px Montserrat;
@@ -1157,11 +1185,15 @@ html, body {
 
 
 @media(max-width:768px) {
+    .navbar-toggler-icon {
+        background-image: url(
+        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(54, 57, 75, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
     .julie-header{
         width: auto;
     }
     .navbar-toggler{
-        background-color: #FF6060;
+        /*background-color: #FF6060;*/
         margin-top: -22px;
     }
     .justify-content-end{
@@ -1259,7 +1291,7 @@ html, body {
         text-align: center;
     }
 /******************************************************************************/
-    .packagesHead, .packagesHead-p, .package-main-container, .home-container, .enterprise, .enterprise-h5, .enterprise-head, .enterprise-body,.card-head-name,.listshead{
+    .packs-header-h1,.packagesHead, .packagesHead-p, .package-main-container, .home-container, .enterprise, .enterprise-h5, .enterprise-head, .enterprise-body,.card-head-name,.listshead{
         text-align: center;
         width: 100%;
         height: auto;
@@ -1311,7 +1343,7 @@ html, body {
         width: 48%;
     }
     /*********************************************************************************/
-    .julie-head-h1, .julie-head-desc,.top35,.julie-head-imgs,.juile-assist-h1-top-bottom,.julie-assist-para{
+    .packs-head-h1, .packs-assist-h1-top-bottom, .julie-head-desc,.top35,.julie-head-imgs,.julie-assist-para,.violetta-head-desc{
         text-align: center!important;
         width: 100%;
         height: auto;
@@ -1326,7 +1358,7 @@ html, body {
     img{
         width: inherit;
     }
-    .listsbody img{
+    .listsbody img, .serviceslists img{
         width: 24px!important;
         height: 24px!important;
     }
@@ -1338,5 +1370,12 @@ html, body {
     .dp-inner-pad{
         margin-top: -55px;
         margin-left: 55px;
+    }
+    .mobMargin50, .img-fluid{
+        margin-top: 50px;
+    }
+    .mobSize30{
+        width: 34px!important;
+        height: 34px!important;
     }
 }
