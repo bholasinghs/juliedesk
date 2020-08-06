@@ -180,7 +180,7 @@ html, body {
     margin-top: 35px;
 }
 .btn-circle{
-    width: 192px;
+    /*width: 192px;*/
     height: 55px;
     padding: 16px 24px;
     border-radius: 28px;
@@ -192,7 +192,7 @@ html, body {
     box-shadow: 0px 3px 20px #B447E933;
     border-radius: 28px;
     opacity: 1;
-    width: 192px;
+    /*width: 192px;*/
     height: 55px;
     margin-right: 24px;
 }
@@ -263,6 +263,7 @@ html, body {
     letter-spacing: 0px;
     color: #471E60;
     opacity: 1;
+    width: 332px;
 }
 .dots{
     background: transparent linear-gradient(326deg, #FF6060 0%, #AC45F8 100%) 0% 0% no-repeat padding-box;
@@ -270,20 +271,8 @@ html, body {
     width: 8px;
     height: 8px;
 }
-.serviceslistsMain:hover{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+.serviceslistsMain{
     box-shadow: 0px 20px 50px #AC45F81A;
-    opacity: 1;
-    border-top: 6px solid;
-    -moz-border-radius-topleft: 4px;
-    -moz-border-radius-topright: 4px;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-radius: 4px 4px 0px 0px;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
-    -webkit-linear-gradient: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
-
 }
 .serviceslistsMain .button{
     background: #FF6060 0% 0% no-repeat padding-box;
@@ -307,10 +296,12 @@ html, body {
     opacity: 1;
     height: 48px;
 }
-.serviceslists span{
+.serviceslists p{
     text-align: left;
     font: 500 16px/20px Montserrat;
     letter-spacing: 0px;
+    width: 271px;
+    padding-top: 3px;
 }
 
 .personalAssistantLeft img{
@@ -392,23 +383,23 @@ html, body {
     color: #2C3439;
     opacity: 1;
 }
-.communityManager .button{
-    background: #5045CE 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 20px #FF606033;
-    border-radius: 28px;
-    opacity: 1;
-    width: 138px;
-    height: 55px;
-    margin-top: 30px;
-}
-.communityManager .button p{
-    text-align: left;
-    font: 500 16px/25px Poppins;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    padding: 10px 7px
-}
+/*.communityManager .button{*/
+/*    background: #5045CE 0% 0% no-repeat padding-box;*/
+/*    box-shadow: 0px 3px 20px #FF606033;*/
+/*    border-radius: 28px;*/
+/*    opacity: 1;*/
+/*    width: 138px;*/
+/*    height: 55px;*/
+/*    margin-top: 30px;*/
+/*}*/
+/*.communityManager .button p{*/
+/*    text-align: left;*/
+/*    font: 500 16px/25px Poppins;*/
+/*    letter-spacing: 0px;*/
+/*    color: #FFFFFF;*/
+/*    opacity: 1;*/
+/*    padding: 10px 7px*/
+/*}*/
 
 
 .imgs img{margin-right: 21px;}
@@ -634,6 +625,13 @@ html, body {
     height: 6px;
     transform: matrix(-1, 0, 0, -1, 0, 0);
 }
+.card-service{
+    background: linear-gradient(313deg, #FF6060 0%, #AC45F8 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px 4px 0px 0px;
+    height: 6px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    width: initial;
+}
 .card-head-name{
     text-align: left;
     font: 500 38px/20px Poppins;
@@ -678,6 +676,22 @@ html, body {
     opacity: 1;
 }
 .package-button:hover {text-decoration: none;}
+/*****************************************************/
+.cm-button {
+    background: #5045CE 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    height: 55px;
+    padding: 16px 24px;
+}
+.cm-button span{
+    text-align: center;
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.cm-button:hover {text-decoration: none;}
+/***********************************************/
 .mostpopular{
     margin-top: 30px;
     margin-bottom: 1px;
@@ -848,7 +862,7 @@ html, body {
     color: #596372;
     opacity: 1;
 }
-/************************************************CM*****************************************************************/
+/************************************************ CM *****************************************************************/
 .cmMenuTop8{
     padding-top: 8px!important;
 }
@@ -1025,6 +1039,120 @@ html, body {
     height: 90px;
     margin-top: 30px;
 }
+/**************************************** Julie *************************************************************************/
+.julie-discover-h1{
+    text-align: center;
+    font: Bold 40px/40px Poppins;
+    letter-spacing: 0px;
+}
+.julie-head-h1{
+    text-align: left;
+    font: 600 50px/60px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    opacity: 1;
+    width: 403px;
+    height: 71px;
+    margin-top: 118px;
+}
+.julie-head-desc{
+    text-align: left;
+    font: 300 20px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #2D2777;
+    opacity: 1;
+    width: 516px;
+    height: 108px;
+}
+.julie-head-imgs{
+    width: 580px;
+    height: 540px;
+}
+.juile-assist-h1-top-bottom{
+    font: 500 28px/26px Poppins;
+    letter-spacing: 0px;
+    color: #4C2C64;
+    opacity: 1;
+}
+.margintop86{
+    margin-top: 86px;
+}
+.margintop124{
+    margin-top: 124px;
+}
+.margintop109{
+    margin-top: 109px;
+}
+.margintop123{
+    margin-top: 123px;
+}
+.julie-assist-para{
+    font: 400 16px/24px Poppins;
+    letter-spacing: 0px;
+    color: #2C3439;
+    opacity: 1;
+}
+.julie-assist-circle-trust{
+    width: 466px;
+}
+.julie-assist-all-p{
+    width: 474px;
+}
+.margingTop113Bottom113{
+    margin-top: 49px;
+    margin-bottom: 113px;
+}
+.margingTop89Bottom203{
+    margin-bottom: 203px;
+    margin-top: 89px;
+}
+.marginBotton275{
+    margin-bottom: 275px;
+}
+.marginBottom116{
+    margin-bottom: 116px;
+}
+/********************************************* Violetta ********************************************************************/
+.violetta-head-h1{
+    text-align: left;
+    font: 600 50px/60px Poppins;
+    letter-spacing: 0px;
+    color: #7B31B2;
+    opacity: 1;
+    width: 485px;
+    height: 71px;
+}
+.violetta-head-desc{
+    text-align: left;
+    font: 300 20px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #2D2777;
+    opacity: 1;
+}
+/************************************************ Buttons *****************************************************************/
+.purpelBackground{
+    background-color: #AC45F8;
+}
+.orangeBackground{
+    background-color: #FF6060;
+}
+.mixBackground{
+    background-image: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
+    box-shadow: 0px 3px 20px #B447E933;
+}
+.mainBtn{
+    border-radius: 28px;
+    height: 55px;
+    padding: 16px 24px;
+}
+.mainBtn span {
+    text-align: center;
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.mainBtn:hover {text-decoration: none;}
 /*****************************************************************************************************************/
 
 
@@ -1057,10 +1185,12 @@ html, body {
         width: 100%;
         height: auto;
         margin-top: 0px;
+        text-align: center;
     }
     .julie-banner-left-header p{
         width: 100%;
         height: auto;
+        text-align: center;
     }
     .julie-banner-left-header .btn-freetrial{
         width: 100%;
@@ -1129,7 +1259,7 @@ html, body {
         text-align: center;
     }
 /******************************************************************************/
-    .packagesHead, .packagesHead-p, .package-main-container, .home-container, .enterprise, .enterprise-h5, .enterprise-head, .enterprise-body{
+    .packagesHead, .packagesHead-p, .package-main-container, .home-container, .enterprise, .enterprise-h5, .enterprise-head, .enterprise-body,.card-head-name,.listshead{
         text-align: center;
         width: 100%;
         height: auto;
@@ -1140,6 +1270,30 @@ html, body {
         top: 0px;
         width: 94%;
         margin-top: 50px;
+    }
+    .mobSet{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .card-head-des,.packages-cards-footer,.creditdetails-desc,.trustus{
+        text-align: center;
+    }
+    .listsbody p{
+        text-align: center;
+        margin-top: -22px;
+    }
+    .btn-freetrial{
+        margin: auto;
+    }
+    .creditdetails-head{
+        margin-top: -32px;
+        text-align: center;
+    }
+    .enterprise{
+        margin-left: 7px;
+    }
+    .enterprise-h5, .enterprise-head, .enterprise-body{
+        padding-left: 0px;
     }
     /*********************************************************************************/
     .cmHead, .cmHead-p, .cm-container, .cm-container-img,.cmPaulDo-desc, .cm-cards-text,.cm-cards-title, .paul-skills-title, .paul-skills-desc, .online-visibility-desc, .online-visibility, .joinCm{
@@ -1156,5 +1310,33 @@ html, body {
         top: -64px;
         width: 48%;
     }
-
+    /*********************************************************************************/
+    .julie-head-h1, .julie-head-desc,.top35,.julie-head-imgs,.juile-assist-h1-top-bottom,.julie-assist-para{
+        text-align: center!important;
+        width: 100%;
+        height: auto;
+    }
+    .btn-vedio {
+        margin: 5px;
+        float: inherit;
+    }
+    .ourServices{
+        margin-bottom: 0px;
+    }
+    img{
+        width: inherit;
+    }
+    .listsbody img{
+        width: 24px!important;
+        height: 24px!important;
+    }
+    .dropdown-item img{
+        width: 62px!important;
+        height: 56px!important;
+        float: left;
+    }
+    .dp-inner-pad{
+        margin-top: -55px;
+        margin-left: 55px;
+    }
 }
