@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Julie Desk</title>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/9bc5ac26f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</head>
+<body>
+<!-- NAVIGATION BAR START-->
+<section>
+    <div class="row julie-header">
+        <div class="container">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-sm" style="margin-top: 22px;">
+                    <a class="navbar-brand julie-logo" href="index.html" title="Julie Desk"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <div class="dropdown dropdown-service">
+                                    <a class="nav-link julie-header-nav dropdown-toggle active" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <div class="dropdown-menu c-box c-box--arrow-top" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="teddy.html">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <img src="assets/images/teddy.png">
+                                                </div>
+                                                <div class="col-md-10 dp-inner-pad">
+                                                    <h5>Teddy</h5>
+                                                    <h6>Personal assistant</h6>
+                                                    <p>Automated meeting scheduling without the back and forth emailing.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="violetta.html">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <img src="assets/images/violetta@2x.png">
+                                                </div>
+                                                <div class="col-md-10 dp-inner-pad">
+                                                    <h5>Violetta</h5>
+                                                    <h6>Personal assistant</h6>
+                                                    <p>Takes over all aspects of scheduling in order to save you time</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="julie.html">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <img src="assets/images/julie@2x.png">
+                                                </div>
+                                                <div class="col-md-10 dp-inner-pad">
+                                                    <h5>Julie</h5>
+                                                    <h6>Personal assistant</h6>
+                                                    <p>Besides meetings organization, Julie will also book restaurants, meeting rooms for you.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="cm.html">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <img src="assets/images/paul.png">
+                                                </div>
+                                                <div class="col-md-10 dp-inner-pad">
+                                                    <h5>Paul</h5>
+                                                    <h6>Personal assistant</h6>
+                                                    <p>A solution to help you manage and improve your digital communication.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="connect" href="#">
+                                            <span class="connect-span">Connectez-vous</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link julie-header-nav" href="package.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link julie-header-nav" href="#">About</a>
+                            </li>
+                            <li class="nav-item cmMenuTop8">
+                                <a class="mainBtn orangeBackground" href="#"><span>Login</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle julie-header-nav" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        FR
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width: 50px">
+                                        <a class="dropdown-item julie-header-nav" href="#">EN</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <h1 class="jobforms-h1">
+                        Product Marketing Manager
+                    </h1>
+                    <p class="jobsAvail">
+                        <span class="textPurpel">At JulieDesk</span> <a href="#"><span class="textOrange">(view all jobs)</span></a> <br>
+                        <span class="textGray">London</span>
+                    </p>
+
+                    <h2 class="jobforms-h2 margintop80">
+                        Why JuliDesk?
+                    </h2>
+                    <p class="jobforms-p">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    </p>
+                    <p class="jobforms-p">
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+                    </p>
+                    <h2 class="jobforms-h2 margintop80">
+                        Responsibilities include:
+                    </h2>
+                    <p class="jobforms-p">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    </p>
+                    <p class="jobforms-p">
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+                    </p>
+                    <h2 class="jobforms-h2 margintop80">
+                        Requirements:
+                    </h2>
+                    <p class="jobforms-p">
+                        ° Lorem ipsum<br>
+                        ° dolor sit amet,<br>
+                        ° consetetur sadipscing elitr<br>
+                        ° sed diam nonumy eirmod t<br>
+                    </p>
+                    <p class="jobforms-p">
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="margintop140 width377">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom01" class="formLabels">First name</label>
+                                <input type="text" class="form-control borderGrey" id="validationCustom01" placeholder="First name" value="" required>
+                                <div class="invalid-feedback">
+                                    Please enter First name.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom02" class="formLabels">Last name</label>
+                                <input type="text" class="form-control borderGrey" id="validationCustom02" placeholder="Last name" value="" required>
+                                <div class="invalid-feedback">
+                                    Please enter Last name.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="validationCustom03" class="formLabels">Email address</label>
+                            <input type="email" class="form-control borderGrey" id="validationCustom03" placeholder="Email" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="validationCustom04" class="formLabels">Phone</label>
+                            <input type="text" class="form-control borderGrey" id="validationCustom04" placeholder="Phone" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid phone number.
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <a href="#" class="textOrange">Add Resume/CV</a>
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="textOrange">Add Cover letter/CV</a>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <button class="btn mainBtn orangeBackground" type="submit"><span>Submit</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BODY PART END-->
+<!-- Footer -->
+<hr class="hrdown"/>
+<footer class="page-footer font-small stylish-color-dark pt-4 julie-footertop">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-4">
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mt-3"><img src="assets/images/Logo.png"></h5>
+                <p>JulieDesk develops AI-based virtual assistants that schedule meetings and lead your digital communication.</p>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none">
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto"></div>
+            <div class="col-md-2 mx-auto">
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3">Solution</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Features</a>
+                    </li>
+                    <li>
+                        <a href="#!">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#!">Free trial</a>
+                    </li>
+                    <li>
+                        <a href="#!">Try Teddy</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3">Resources</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#!">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#!">Security</a>
+                    </li>
+                    <li>
+                        <a href="#!">FAQ</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 ">ABOUT US</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Team</a>
+                    </li>
+                    <li>
+                        <a href="#!">Recruitment</a>
+                    </li>
+                    <li>
+                        <a href="#!">Press room</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="julie-footertop-copyright text-left py-3"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p style="position: relative;bottom: 5px;">Copyright © 2020 JulieDesk. Tous droits réservés.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</body>
+</html>

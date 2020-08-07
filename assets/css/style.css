@@ -253,9 +253,10 @@ html, body {
     opacity: 1;
     margin-bottom: 50px;
 }
-.textBrown{color: #471E60;}
+.textBrown{color: #471E60!important;}
 .textPurpel{color: #AC45F8;}
 .textOrange{color: #F26261;}
+.textGray{color: #596372;}
 
 .cmpa{
     text-align: left;
@@ -1173,6 +1174,9 @@ html, body {
 .orangeBackground{
     background-color: #FF6060;
 }
+.grayBackground{
+    background-color: #F5F5FD;
+}
 .mixBackground{
     background-image: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
     box-shadow: 0px 3px 20px #B447E933;
@@ -1249,7 +1253,113 @@ html, body {
     left: 106px;
 
 }
-/*****************************************************************************************************************/
+/*********************************************** JOBS ******************************************************************/
+.margintop80{
+    margin-top: 80px;
+}
+.borderGrey{
+    border: 1px solid #A6ADBA;
+    border-radius: 4px;
+    opacity: 1;
+    height: 55px;
+}
+.jobsAvail{
+    font: 500 18px/27px Poppins;
+    letter-spacing: 0px;
+}
+.formLabels{
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.jobforms-h1{
+    text-align: left;
+    font: 600 32px/48px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.jobforms-h2{
+    text-align: left;
+    font: 500 28px/38px Poppins;
+    letter-spacing: 0px;
+    color: #4C2C64;
+    opacity: 1;
+}
+.jobforms-p{
+    text-align: left;
+    font: 400 18px/24px Poppins;
+    letter-spacing: 0px;
+    color: #2C3439;
+    opacity: 1;
+    width: 474px;
+}
+.width377{
+    width: 377px;
+}
+/*********************************************** login-temp ******************************************************************/
+.login-temp-img-back{
+    background: linear-gradient(359deg, #EEE6FF 0%, #B2ACBF1A 51%, #77738000 100%);
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+.login-temp-btn-width{
+    width: 100%;
+}
+.login-temp-signup{
+    font: 600 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #A6ADBA;
+}
+.orSeparator{
+    font: 600 16px/40px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}
+.login-width{
+    width: 377px;
+}
+.login-pass{
+    background: #E8FBEE 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    height: 94px;
+}
+.login-pass-check{
+    width: 32px;
+    height: 32px;
+    margin: 31px 15px 31px 20px;
+}
+.login-pass-p{
+    font: 500 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    width: 285px;
+    margin-top: 15px;
+}
+/*********************************************** ******************************************************************/
 
 
 @media(max-width:768px) {
@@ -1411,7 +1521,9 @@ html, body {
         width: 48%;
     }
     /*********************************************************************************/
-    .packs-head-h1, .packs-assist-h1-top-bottom, .julie-head-desc,.top35,.julie-head-imgs,.julie-assist-para,.violetta-head-desc,.width476,.teddy-top-heading-h1,.autofollow-desc,.matrix-img1,.matrix-img2,.teddy-matrix-desc{
+    .packs-head-h1, .packs-assist-h1-top-bottom, .julie-head-desc,.top35,.julie-head-imgs,
+    .julie-assist-para,.violetta-head-desc,.width476,.teddy-top-heading-h1,.autofollow-desc,
+    .matrix-img1,.matrix-img2,.teddy-matrix-desc,.jobforms-h1,.jobsAvail,.jobforms-h2,.jobforms-p,.width377,.login-temp-img-back{
         text-align: center!important;
         width: 100%;
         height: auto;
@@ -1448,5 +1560,8 @@ html, body {
     }
     .matrix-img2{
         left: inherit;
+    }
+    .login-width{
+        width: max-content;
     }
 }
