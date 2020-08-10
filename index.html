@@ -14,12 +14,25 @@
         <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/9bc5ac26f8.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/style.css">
+        <script type="text/javascript">
+            $(function () {
+                $(document).scroll(function () {
+                    var $nav = $(".fixed-top");
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                });
+                $(".btn-vedio").mouseover(function(){
+                    $(".btn-vedio-text").html("Connectez-vous <i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i>")
+                }).mouseout(function () {
+                    $(".btn-vedio-text").html("Discover in video <i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i>")
+                })
+            });
+        </script>
     </head>
     <body>
     <!-- NAVIGATION BAR START-->
-    <div class="row julie-header">
-        <div class="container">
-            <div class="col-md-12">
+    <div class="julie-header">
+        <div class="justify-content-center julie-header-back fixed-top">
+            <div class="container">
                 <nav class="navbar navbar-expand-sm" style="margin-top: 22px;">
                     <a class="navbar-brand julie-logo" href="index.html" title="Julie Desk"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -98,8 +111,13 @@
                             <li class="nav-item">
                                 <a class="nav-link julie-header-nav" href="#">24h with Julie</a>
                             </li>
-                            <li class="nav-item cmMenuTop8">
+                            <li class="nav-item cmMenuTop8 scrollHide">
                                 <a class="package-button" href="#"><span>Login</span></a>
+                            </li>
+                            <li class="nav-item pricingBtn scrollShow">
+                                <a href="#" class="btn-circle btn-freetrial">
+                                    <span class="btn-freetrial-text">Start you free trial</span>
+                                </a>
                             </li>
                             <li class="nav-item">
                                 <div class="dropdown">
@@ -195,7 +213,7 @@
                                 <div class="col-md-1"><img src="assets/images/checkmark-circle-2.png"></div>
                                 <div class="col-md-10"><p>Exclusive publications on your social networks</p></div>
                             </div>
-                            <div class="d-flex btnCenter m-3">
+                            <div class="d-flex m-lg-3">
                                 <a class="package-button" href="#"><span>See more</span></a>
                             </div>
                         </div>
@@ -217,7 +235,7 @@
                                 <div class="col-md-1"><img src="assets/images/checkmark-circle-2.png"></div>
                                 <div class="col-md-10"><p>3 offers : Teddy, Violetta and Julie</p></div>
                             </div>
-                            <div class="d-flex btnCenter m-3">
+                            <div class="d-flex m-lg-3">
                                 <a class="package-button" href="#"><span>See more</span></a>
                             </div>
                         </div>
@@ -253,7 +271,7 @@
                             <img src="assets/images/Zapier_logo.png">
                         </div>
                         <div class="d-flex btnCenter top35">
-                            <a class="package-button" href="#"><span>Learn more</span></a>
+                            <a class="package-button hoverVoliet" href="#"><span>Learn more</span></a>
                         </div>
                     </div>
                 </div>

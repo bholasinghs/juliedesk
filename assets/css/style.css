@@ -9,16 +9,18 @@ html, body {
 .julie-header{
     width: 100%;
     height: 90px;
+    margin-bottom: 80px;
+}
+.julie-header-back{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 20px #AD58580F;
     opacity: 1;
-    margin-bottom: 80px;
 }
 .julie-header-nav{
     text-align: left;
     font: 400 16px/25px Poppins;
     letter-spacing: 0px;
-    color: #2D2777;
+    color: #2D2777 !important;
     opacity: 1;
 }
 .julie-header-nav:hover{
@@ -27,8 +29,24 @@ html, body {
 .active{
     color: #FF6060 !important;
 }
+.navbar{
+    padding: 0;
+}
+.navbar-nav{
+    margin-bottom: 10px;
+}
+/*********** change button****************************/
+.scrollShow {
+    display:none;
+}
+.fixed-top.scrolled .scrollShow {
+    display: block;
+}
 
-
+.fixed-top.scrolled .scrollHide {
+    display:none;
+}
+/***************************************/
 .dropdown-service:hover>.dropdown-menu {
     display: block;
     /*margin-top: 53px;*/
@@ -130,7 +148,9 @@ html, body {
     color: #FF6060;
     opacity: 1;
 }
-
+.hoverVoliet:hover{
+    background-color: #5045CE;
+}
 
 
 
@@ -1359,6 +1379,121 @@ html, body {
     width: 285px;
     margin-top: 15px;
 }
+.freetrial-chk{
+    background: #EEE6FF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    width: 376px;
+    height: 85px;
+}
+.form-check-1{
+    padding-top: 26px;
+    padding-left: 25px;
+}
+.form-credit{
+    font: 600 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #A6ADBA;
+    opacity: 1;
+}
+.freetrial-img{
+    position: absolute;
+    left: -91px;
+    width: 57%;
+}
+.width376{
+    width: 376px;
+}
+/* Remove default checkbox */
+.form-check-1 [type="checkbox"]:not(:checked),
+.form-check-1 [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+.form-check-1 [type="checkbox"]:not(:checked) + label,
+.form-check-1 [type="checkbox"]:checked + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+    height: 34px;
+    line-height: 25px;
+    padding-top: 5px;
+    padding-left: 51px;
+
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+/* checkbox aspect */
+.form-check-1 [type="checkbox"] + label:before,
+.form-check-1 [type="checkbox"] + label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+/* Unchecked styles */
+.form-check-1 [type="checkbox"]:not(:checked) + label:before {
+    top: 0px;
+    width: 19px; height: 19px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+.form-check-1 [type="checkbox"]:not(:checked) + label:after {
+    top: 0px;
+    border: 1px solid #ffffff;
+    z-index: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 34px;
+    height: 34px;
+}
+/* Checked styles */
+.form-check-1 [type="checkbox"]:checked + label:before {
+    top: 2px;
+    width: 15px; height: 27px;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+
+    -webkit-transform-origin: 20% 40%;
+    transform-origin: 100% 100%;
+    border-radius: 4px;
+}
+.form-check-1 [type="checkbox"]:checked + label:after {
+    top: 0px;
+    width: 34px; height: 34px;
+    border: 1px solid #ffffff;
+    z-index: 0;
+    background-color: #fff;
+    border-radius: 4px;
+}
+/* disabled checkbox */
+.form-check-1 [type="checkbox"]:disabled:not(:checked) + label:before,
+.form-check-1 [type="checkbox"]:disabled:checked + label:before {
+    top: 0;
+    box-shadow: none;
+    background-color: #444;
+    width: 19px; height: 19px;
+    border: 3px solid #444;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+}
+.form-check-1 [type="checkbox"]:disabled + label {
+    color: #555;
+}
+.form-check-1 [type="checkbox"]:disabled:not(:checked) + label:hover:before {
+    border-color: red;
+}
 /*********************************************** ******************************************************************/
 
 
@@ -1390,17 +1525,25 @@ html, body {
     .julie-banner{
         height: auto;
         margin-bottom: 0px;
+        width: auto;
     }
     .julie-banner-left-header h1{
         width: 100%;
         height: auto;
         margin-top: 0px;
         text-align: center;
+        font: 600 32px/38px Poppins;
+        letter-spacing: 0px;
+        color: #471E60;
     }
     .julie-banner-left-header p{
         width: 100%;
         height: auto;
         text-align: center;
+        font: 300 14px/24px Montserrat;
+        letter-spacing: 0px;
+        color: #471E60;
+        opacity: 1;
     }
     .julie-banner-left-header .btn-freetrial{
         width: 100%;
@@ -1417,6 +1560,16 @@ html, body {
     }
     .trustus h1{
         margin-top: 100px;
+        text-align: center;
+        font: 600 22px/38px Poppins;
+    }
+    .whatWedo{
+        text-align: center;
+        font: 600 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #A6ADBA;
+        text-transform: uppercase;
+        opacity: 1;
     }
     .personalAssistantLeft img, .communityManagerRight img, #carouselFeed{
         width: 100%;
@@ -1534,13 +1687,36 @@ html, body {
     }
     .ourServices{
         margin-bottom: 0px;
+        text-align: center;
+        font: 700 24px/40px Poppins;
+    }
+    .cmpa{
+        text-align: left;
+        font: 700 18px/40px Montserrat;
+        letter-spacing: 0px;
     }
     img{
         width: inherit;
     }
     .listsbody img, .serviceslists img{
-        width: 24px!important;
-        height: 24px!important;
+        width: 18px!important;
+        height: 18px!important;
+    }
+    .serviceslists p{
+        font: 500 12px/20px Montserrat;
+        letter-spacing: 0px;
+        color: #471E60;
+        opacity: 1;
+        margin-top: -36px;
+        margin-left: 22px;
+    }
+    .serviceslistsMain  .package-button{
+        height: 42px;
+        padding: 11px 24px;
+    }
+    .serviceslistsMain .package-button span{
+        font: 500 14px/21px Poppins;
+        letter-spacing: 0px;
     }
     .dropdown-item img{
         width: 62px!important;
@@ -1563,5 +1739,10 @@ html, body {
     }
     .login-width{
         width: max-content;
+    }
+    .freetrial-img {
+        position: unset;
+        left: 0;
+        width: inherit;
     }
 }
