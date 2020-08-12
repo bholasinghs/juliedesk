@@ -14,40 +14,78 @@
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/9bc5ac26f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+        $(function () {
+            'use strict'
+
+            $("[data-trigger]").on("click", function(){
+                var trigger_id =  $(this).attr('data-trigger');
+                $(trigger_id).toggleClass("show");
+                $('body').toggleClass("offcanvas-active");
+            });
+
+            // close if press ESC button
+            $(document).on('keydown', function(event) {
+                if(event.keyCode === 27) {
+                    $(".navbar-collapse").removeClass("show");
+                    $("body").removeClass("overlay-active");
+                }
+            });
+
+            // close button
+            $(".btn-close").click(function(e){
+                $(".navbar-collapse").removeClass("show");
+                $("body").removeClass("offcanvas-active");
+            });
+        });
+    </script>
 </head>
 <body>
 <!-- NAVIGATION BAR START-->
-<section>
-    <div class="row julie-header">
-        <div class="container">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-sm" style="margin-top: 22px;">
-                    <a class="navbar-brand julie-logo" href="index.html" title="Julie Desk"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link julie-header-nav" href="#">Contact us</a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <a class="btn dropdown-toggle julie-header-nav" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        FR
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width: 50px">
-                                        <a class="dropdown-item julie-header-nav" href="#">EN</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+<section class="julie-header fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand julie-logo" href="index.html" title="Julie Desk"></a>
+            <button class="navbar-toggler border-0" type="button" data-trigger="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-end" id="main_nav">
+                <div class="offcanvas-header mt-3">
+                    <button class="btn btn-close float-right"> x </button>
+                    <h5 class="py-2"><a class="navbar-brand julie-logo popLogo" href="index.html" title="Julie Desk"></a></h5>
+                </div>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                        <div class="dropdown-divider d-md-none"></div>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FR
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width: 50px">
+                                <a class="dropdown-item" href="#">EN</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menuBack text-center d-sm-block d-md-none">
+                    <a href="#" class="mainBtn mixBackground">
+                        <span>Start you free trial</span>
+                    </a>
+                    <p class="alreadyAccountText">
+                        Already an account?
+                    </p>
+                    <a href="#" class="alreadyAccountTextA">Log In</a>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
 </section>
+<!-- NAVIGATION BAR END-->
+<div class="margintop118"></div>
 
 <section>
     <div class="login-temp-img-back"></div>
@@ -99,7 +137,7 @@
                         </div>
 
                         <div class="form-group text-center mt-3">
-                            <span class="login-temp-signup">No account? </span><a href="#" class="textOrange">Sign up for free!/CV</a>
+                            <span class="login-temp-signup">No account? </span><a href="#" class="textOrange underline">Sign up for free!/CV</a>
                         </div>
                     </form>
                 </div>

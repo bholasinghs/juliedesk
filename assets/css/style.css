@@ -2,105 +2,16 @@ html, body {
     height:100%;
     margin:0;
     padding:0;
-}
-.nav-item{
-    margin-right: 27px;
-}
-.julie-header{
-    width: 100%;
-    height: 90px;
-    margin-bottom: 80px;
-}
-.julie-header-back{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 20px #AD58580F;
-    opacity: 1;
-}
-.julie-header-nav{
-    text-align: left;
-    font: 400 16px/25px Poppins;
-    letter-spacing: 0px;
-    color: #2D2777 !important;
-    opacity: 1;
-}
-.julie-header-nav:hover{
-    color: #FF6060 !important;
+    font-family: 'Poppins', 'Montserrat','Rubik','Muli';
 }
 .active{
     color: #FF6060 !important;
 }
-.navbar{
-    padding: 0;
-}
-.navbar-nav{
-    margin-bottom: 10px;
-}
-/*********** change button****************************/
-.scrollShow {
-    display:none;
-}
-.fixed-top.scrolled .scrollShow {
-    display: block;
-}
 
-.fixed-top.scrolled .scrollHide {
-    display:none;
-}
+
+/*********** change button****************************/
+
 /***************************************/
-.dropdown-service:hover>.dropdown-menu {
-    display: block;
-    /*margin-top: 53px;*/
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 30px #2D277729;
-    border-radius: 6px;
-    opacity: 1;
-    border: none;
-    width: 426px;
-    height: 503px;
-    left: -174px;
-}
-.dropdown-service .dropdown-item .dp-inner-pad{padding-left: 25px;}
-.dropdown-service .dropdown-item{
-    opacity: 1;
-    width: 395px;
-    height: 98px;
-    margin-left: 15px;
-    margin-top: 12px;
-    margin-right: 16px;
-    white-space: inherit;
-    padding-top: 11px;
-}
-.dropdown-service .dropdown-item h5{text-align: left;
-    font: 600 16px/16px Poppins;
-    letter-spacing: 0px;
-    color: #471E60;}
-.dropdown-service .dropdown-item h6{
-    text-align: left;
-    font: 500 12px/16px Montserrat;
-    letter-spacing: 0px;
-    color: #FF6060;
-}
-.dropdown-service .dropdown-item p{
-    text-align: left;
-    font: 300 12px/16px Poppins;
-    letter-spacing: 0px;
-    color: #471E60;
-    opacity: 1;
-    width: 272px;
-    height: 33px;
-}
-.dropdown-service .dropdown-item.active, .dropdown-item:active{
-    border-radius: 10px;
-    background-color: #ffe6ea;
-}
-.dropdown-service .dropdown-item:hover{
-    background-color: #ffe6ea;
-    border-radius: 10px;
-}
-.dropdown-service>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-    pointer-events: none;
-}
 .c-box {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -130,38 +41,11 @@ html, body {
     border-bottom: 10px solid #FFFFFF;
     top: -10px;
 }
-.connect{
-    border: 1px solid #FF6060;
-    border-radius: 28px;
-    opacity: 0.3;
-    width: 184px;
-    height: 42px;
-    text-align: center;
-    float: left;
-    margin-left: 41px;
-    margin-top: 5px;
-}
-.connect-span{
-    text-align: center;
-    font: 600 16px/25px Poppins;
-    letter-spacing: 0px;
-    color: #FF6060;
-    opacity: 1;
-}
 .hoverVoliet:hover{
     background-color: #5045CE;
 }
 
 
-
-
-
-.julie-logo{
-    width: 167px;
-    height: 35px;
-    background: transparent url('../images/Logo Juliedesk.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
 .julie-login{
     background: var(--corail-ff6060) 0% 0% no-repeat padding-box;
     background: #FF6060 0% 0% no-repeat padding-box;
@@ -287,10 +171,7 @@ html, body {
     width: 332px;
 }
 .dots{
-    background: transparent linear-gradient(326deg, #FF6060 0%, #AC45F8 100%) 0% 0% no-repeat padding-box;
-    opacity: 1;
-    width: 8px;
-    height: 8px;
+    padding-top: 74%;
 }
 .serviceslistsMain{
     box-shadow: 0px 20px 50px #AC45F81A;
@@ -555,10 +436,7 @@ html, body {
     opacity: 1;
 }
 /**************************************** packages *************************************************************************/
-.pricingBtn{
-    padding-top: 8px!important;
-    margin-right: -6px!important;
-}
+
 .margingTopBottom114{
     margin-top: 114px!important;
     margin-bottom: 114px!important;
@@ -566,7 +444,7 @@ html, body {
 .home-container {
     margin: 0 auto;
     height: 694px;
-    background: radial-gradient(116% 24% at top,transparent 47%,#FAF0FF 0)
+    background: radial-gradient(116% 24% at top,transparent 47%,#FAF0FF 0);
 }
 .home-cards{
     background-color: transparent;
@@ -1495,33 +1373,28 @@ html, body {
     border-color: red;
 }
 /*********************************************** ******************************************************************/
-
+.mobCmHide{
+    display: block;
+}
+.mobCmShow{
+    display: none;
+}
+.julie-banner-right-content img{
+    height: 514px;
+    width: 708px;
+    margin-top: -15px;
+}
 
 @media(max-width:768px) {
-    .navbar-toggler-icon {
-        background-image: url(
-        "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(54, 57, 75, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    .scrollHide,.scrollShow,.mobFrLang{
+        display: none!important;
     }
-    .julie-header{
-        width: auto;
-    }
-    .navbar-toggler{
-        /*background-color: #FF6060;*/
-        margin-top: -22px;
-    }
+
     .justify-content-end{
         z-index: 1;
     }
-    .navbar-nav{
-        background-color: #ffffff;
-    }
-    .julie-logo{
-        width: 177px;
-        height: 58px;
-    }
-    #dropdownMenuLink{
-        margin-left: -11px;
-    }
+
+
     .julie-banner{
         height: auto;
         margin-bottom: 0px;
@@ -1551,8 +1424,41 @@ html, body {
         margin-top: 39px;
         margin-left: 39px;
     }
+    .julie-banner-right-content img{
+        height: auto;
+        width: auto;
+        margin-top: 50px;
+    }
     .personalAssistant .button, .serviceslistsMain .button{
         margin: 30px 64px
+    }
+    .personalAssistant h1{
+        text-align: center;
+        font: 700 24px/26px Poppins;
+        letter-spacing: 0px;
+        color: #4C2C64;
+        opacity: 1;
+        margin-top: 23px;
+    }
+    .personalAssistant h6{
+        text-align: center;
+        font: 600 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #FF6060;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+    .personalAssistant p{
+        text-align: center;
+        font: 300 14px/24px Poppins;
+        letter-spacing: 0px;
+        color: #2C3439;
+        opacity: 1;
+    }
+    .imgs img {
+        margin-right: 12px;
+        width: 27px;
+        height: 26px;
     }
     .btn-vedio{
         margin: 35px;
@@ -1594,7 +1500,21 @@ html, body {
     .carousel-caption img {
         width: 4rem;
         border-radius: 4rem;
-        margin-top: 1rem
+        margin-top: 1rem;
+        float:left;
+    }
+
+    .founderText{
+        font: 500 13px/9px Poppins;
+        text-align: left;
+        margin-left: 72px;
+        margin-top: -49px;
+    }
+    .foundationText{
+        font: 500 12px/16px Poppins;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-left: 72px;
     }
     .carousel-caption {
         position: initial;
@@ -1607,20 +1527,47 @@ html, body {
         font-weight: bold;
         line-height: 1.5rem
     }
+
     .carousel-indicators{
-        top: 430px;
+        top: 329px;
+    }
+    .carousel-indicators li{
+        width: 6px;
+        height: 6px;
     }
     .hrdown{margin-top: 100px;}
-    .julie-footertop h5 {
-        text-align: center;
+    .julie-footertop img{
+        float: left!important;
     }
+    /*.julie-footertop h5 {*/
+    /*    text-align: center;*/
+    /*}*/
     .julie-footertop-copyright{
         height: 96px;
         margin-bottom: -72px
     }
-    .julie-footertop p, .founderText, .foundationText{
-        text-align: center;
+    .julie-footertop p{
+        text-align: left;
+        clear: both;
+        padding-top: 16px;
+        font: 600 14px/24px Muli;
     }
+.mobFoot{
+    width: 46%;
+    text-align: left;
+}
+.socialBack{
+    background: #EEE6FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    padding: 12px;
+    float: left;
+    font-size: 12px;
+    margin-right: 3px;
+}
+
 /******************************************************************************/
     .packs-header-h1,.packagesHead, .packagesHead-p, .package-main-container, .home-container, .enterprise, .enterprise-h5, .enterprise-head, .enterprise-body,.card-head-name,.listshead{
         text-align: center;
@@ -1710,23 +1657,60 @@ html, body {
         margin-top: -36px;
         margin-left: 22px;
     }
-    .serviceslistsMain  .package-button{
+     .package-button{
         height: 42px;
         padding: 11px 24px;
     }
-    .serviceslistsMain .package-button span{
+      .package-button span{
         font: 500 14px/21px Poppins;
         letter-spacing: 0px;
     }
-    .dropdown-item img{
-        width: 62px!important;
-        height: 56px!important;
-        float: left;
+
+    .mobCmHide{
+        display: none;
     }
-    .dp-inner-pad{
-        margin-top: -55px;
-        margin-left: 55px;
+    .mobCmShow{
+        display: block;
     }
+    .communityManager h1{
+        text-align: center;
+        font: 700 24px/28px Poppins;
+        letter-spacing: 0px;
+        opacity: 1;
+    }
+    .communityManager h6{
+        text-align: center;
+        font: 600 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #FF6060;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+    .communityManager p{
+        text-align: center;
+        font: 300 14px/24px Poppins;
+        letter-spacing: 0px;
+        color: #2C3439;
+        opacity: 1;
+    }
+    .imgs{
+        text-align: center;
+    }
+    .cm-button{
+        height: 42px;
+        padding: 11px 24px;
+    }
+    .cm-button span{
+        font: 500 14px/21px Poppins;
+        letter-spacing: 0px;
+    }
+    .feeback{
+        text-align: center;
+        font: 700 24px/35px Poppins;
+        letter-spacing: 0px;
+        opacity: 1;
+    }
+
     .mobMargin50, .img-fluid{
         margin-top: 50px;
     }
@@ -1744,5 +1728,311 @@ html, body {
         position: unset;
         left: 0;
         width: inherit;
+    }
+
+    .btn-freetrial-text{
+        font: 500 14px/21px Poppins;
+    }
+
+}
+/**********************************************************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************************************************************/
+/*****************************************************************************************************************************************************************************************************/
+/****************************************************** Navigaion menu **************************************************************************************/
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', 'Montserrat','Rubik','Muli';
+}
+.julie-logo{
+    width: 167px;
+    height: 35px;
+    background: transparent url('../images/Logo Juliedesk.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    margin-left: -15px;
+}
+.julie-header{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #AD58580F;
+    opacity: 1;
+    height: 90px;
+}
+.connect{
+    border: 1px solid #FF6060;
+    border-radius: 28px;
+    opacity: 0.3;
+    text-align: center;
+    float: left;
+    margin-left: 84px;
+    margin-top: 21px;
+    padding: 5px 28px 9px 28px;
+}
+.connect-span{
+    text-align: center;
+    font: 600 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    opacity: 1;
+}
+.connect:hover{
+    text-decoration:none;
+}
+.navbar-light .navbar-nav .nav-link{
+    font: 400 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #2D2777;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    font: 400 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FF6060;
+}
+.nav-item{
+    margin-right: 31px;
+}
+.dp-inner-pad{
+    width: 0px;
+    padding-left: unset;
+    padding-right: unset;
+}
+.menuHead{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #2D277729;
+    border-radius: 6px;
+    opacity: 1;
+    border: 0;
+}
+.menuHead p{
+    white-space: inherit;
+    text-align: left;
+    font: 300 12px/16px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    width: 268px;
+}
+#servicesId .dropdown-menu{
+    width: 426px;
+    height: 503px;
+    left: -136%
+}
+#servicesId .dropdown-item:focus, #servicesId .dropdown-item{
+    width: 395px;
+    height: 98px;
+    white-space: inherit;
+}
+#servicesId .dropdown-item:focus, #servicesId .dropdown-item:hover{
+    background-color: #ffe6ea;
+    border-radius: 10px;
+    width: 395px;
+    margin-left: 14px;
+}
+#servicesId .dropdown-item img{
+    padding-top: 21px;
+    margin-right: 24px;
+}
+#servicesId .dropdown-item h5 {
+    text-align: left;
+    font: 600 16px/16px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    padding-top: 11px;
+}
+#servicesId .dropdown-item h6 {
+    text-align: left;
+    font: 500 12px/16px Montserrat;
+    letter-spacing: 0px;
+    color: #FF6060;
+}
+/********************************** Buttons *********************************************/
+.textGreen{
+    color: #19C3B9;
+}
+.greenBackground{
+    background-color: #19C3B9;
+}
+.deepGreenBackground{
+    background-color: #219D96;
+}
+.purpelBackground{
+    background-color: #AC45F8;
+}
+.orangeBackground{
+    background-color: #FF6060;
+}
+.grayBackground{
+    background-color: #F5F5FD;
+}
+.mixBackground{
+    background-image: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
+    box-shadow: 0px 3px 20px #B447E933;
+}
+.mainBtn{
+    border-radius: 28px;
+    height: 55px;
+    padding: 16px 24px;
+}
+.mainBtn span {
+    text-align: center;
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.mainBtn:hover {text-decoration: none;}
+/*******************************************************************************/
+.menuBack{
+    background: radial-gradient(174% 55% at top,transparent 43%,#FAF0FF 0);
+    /*width: 381px;*/
+    height: 218px;
+    padding-top: 94px;
+    position: relative;
+    bottom: -41%;
+    margin-left: -31px;
+    margin-right: -31px;
+}
+.cmMenuTop7{
+    padding-top: 7px;
+}
+/****************************************************/
+.scrollShow {
+    display:none;
+}
+.fixed-top.scrolled .scrollShow {
+    display: block;
+}
+
+.fixed-top.scrolled .scrollHide {
+    display:none !important;
+}
+
+
+/*********************************** Mobile ********************************************/
+@media(max-width:768px) {
+    .scrollHide,.scrollShow,.mobFrLang{
+        display: none!important;
+    }
+    .popLogo{
+        margin-top:unset;
+    }
+    .julie-logo{
+        margin-left: unset;
+    }
+    /*.navbar-collapse {*/
+    /*    height: 90vh; !* Set to lower value, because*/
+    /*                 height = <total height> - <.navbar-header height>*/
+    /*                 so you will not lose the last menu *!*/
+    /*    max-height: 100vh!important; !* Or max-height: none!important;  *!*/
+    /*}*/
+    #servicesId .dropdown-menu, #servicesId .dropdown-item:hover, .menuHead p{
+        width: auto;
+        height: auto;
+    }
+    .navbar-toggler.collapsed .close-icon {
+        display: none;
+    }
+    /*.navbar-toggler:not(.collapsed) .navbar-toggler-icon {*/
+    /*    display: inline;*/
+    /*}*/
+
+    /*.navbar-toggler-icon {*/
+    /*    background-image: url(*/
+    /*    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(54, 57, 75, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");*/
+    /*}*/
+    .navbar-light .navbar-nav .nav-link{
+        text-align: left;
+        font: 500 16px/20px Montserrat;
+        letter-spacing: 0px;
+        color: #471E60;
+        opacity: 1;
+    }
+    .alreadyAccountText {
+        text-align: center;
+        font: 400 16px/24px Poppins;
+        letter-spacing: 0px;
+        color: #471E60;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+    .alreadyAccountTextA {
+        text-align: center;
+        text-decoration: underline;
+        font: 700 16px/24px Poppins;
+        letter-spacing: 0px;
+        color: #FF6060;
+    }
+    .menuHead {
+        background: unset;
+        box-shadow: unset;
+        border-radius: unset;
+        opacity: unset;
+        border: unset;
+    }
+    #servicesId .dropdown-item img{
+        width: 42px;
+        height: 42px;
+        padding-top: unset;
+        margin-right: unset;
+    }
+    #servicesId .dropdown-item{
+        width: auto;
+        height: auto;
+        white-space: inherit;
+        margin-left: -20px;
+    }
+    .dp-inner-pad{
+        padding-top: 44px;
+    }
+    .mainBtn{
+        padding: 13px 33px;
+    }
+    .mainBtn span{
+        text-align: center;
+        font: 500 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+    .btn-close{
+        margin-right: 13px;
+        font-size: 22px;
+    }
+
+}
+
+
+body.offcanvas-active{
+    overflow:hidden;
+}
+.offcanvas-header{ display:none; }
+.underline{
+    text-decoration: underline;
+}
+@media (max-width: 992px) {
+    .offcanvas-header{ display:block; }
+    .navbar-collapse {
+        position: fixed;
+        top:0;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #FFFFFF;
+        transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+    }
+    .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-100%);
     }
 }

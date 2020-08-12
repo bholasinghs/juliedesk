@@ -14,106 +14,165 @@
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/9bc5ac26f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+        $(function () {
+            'use strict'
+
+            $("[data-trigger]").on("click", function(){
+                var trigger_id =  $(this).attr('data-trigger');
+                $(trigger_id).toggleClass("show");
+                $('body').toggleClass("offcanvas-active");
+            });
+
+            // close if press ESC button
+            $(document).on('keydown', function(event) {
+                if(event.keyCode === 27) {
+                    $(".navbar-collapse").removeClass("show");
+                    $("body").removeClass("overlay-active");
+                }
+            });
+
+            // close button
+            $(".btn-close").click(function(e){
+                $(".navbar-collapse").removeClass("show");
+                $("body").removeClass("offcanvas-active");
+            });
+
+            $(document).scroll(function () {
+                var $nav = $(".fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+
+        });
+    </script>
 </head>
 <body>
 <!-- NAVIGATION BAR START-->
-<section>
-    <div class="row julie-header">
-        <div class="container">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-sm" style="margin-top: 22px;">
-                    <a class="navbar-brand julie-logo" href="index.html" title="Julie Desk"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <div class="dropdown dropdown-service">
-                                    <a class="nav-link julie-header-nav dropdown-toggle active" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Services
-                                    </a>
-                                    <div class="dropdown-menu c-box c-box--arrow-top" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="teddy.html">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <img src="assets/images/teddy.png">
-                                                </div>
-                                                <div class="col-md-10 dp-inner-pad">
-                                                    <h5>Teddy</h5>
-                                                    <h6>Personal assistant</h6>
-                                                    <p>Automated meeting scheduling without the back and forth emailing.</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item" href="violetta.html">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <img src="assets/images/violetta@2x.png">
-                                                </div>
-                                                <div class="col-md-10 dp-inner-pad">
-                                                    <h5>Violetta</h5>
-                                                    <h6>Personal assistant</h6>
-                                                    <p>Takes over all aspects of scheduling in order to save you time</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item" href="julie.html">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <img src="assets/images/julie@2x.png">
-                                                </div>
-                                                <div class="col-md-10 dp-inner-pad">
-                                                    <h5>Julie</h5>
-                                                    <h6>Personal assistant</h6>
-                                                    <p>Besides meetings organization, Julie will also book restaurants, meeting rooms for you.</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item" href="cm.html">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <img src="assets/images/paul.png">
-                                                </div>
-                                                <div class="col-md-10 dp-inner-pad">
-                                                    <h5>Paul</h5>
-                                                    <h6>Personal assistant</h6>
-                                                    <p>A solution to help you manage and improve your digital communication.</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a class="connect" href="#">
-                                            <span class="connect-span">Connectez-vous</span>
-                                        </a>
+<section class="julie-header fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand julie-logo" href="index.html" title="Julie Desk"></a>
+            <button class="navbar-toggler border-0" type="button" data-trigger="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-end" id="main_nav">
+                <div class="offcanvas-header mt-3">
+                    <button class="btn btn-close float-right"> x </button>
+                    <h5 class="py-2"><a class="navbar-brand julie-logo popLogo" href="index.html" title="Julie Desk"></a></h5>
+                </div>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown" id="servicesId">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-divider d-md-none"></div>
+                        <div class="dropdown-menu menuHead c-box c-box--arrow-top" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="teddy.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/teddy.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Teddy</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>Automated meeting scheduling without the back and forth emailing.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link julie-header-nav" href="package.html">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link julie-header-nav" href="#">About</a>
-                            </li>
-                            <li class="nav-item cmMenuTop8">
-                                <a class="package-button" href="#"><span>Login</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <a class="btn dropdown-toggle julie-header-nav" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        FR
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width: 50px">
-                                        <a class="dropdown-item julie-header-nav" href="#">EN</a>
+                            </a>
+                            <a class="dropdown-item" href="violetta.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/violetta@2x.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Violetta</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>Takes over all aspects of scheduling in order to save you time</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                            </a>
+                            <a class="dropdown-item" href="julie.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/julie@2x.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Julie</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>Besides meetings organization, Julie will also book restaurants, meeting rooms for you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="cm.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/paul.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Paul</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>A solution to help you manage and improve your digital communication.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--                                <div class="dropdown-divider d-none d-md-block"></div>-->
+                            <a class="connect d-none d-md-block" href="#">
+                                <span class="connect-span">All our products</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="package.html">Pricing</a>
+                        <div class="dropdown-divider d-md-none"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                        <div class="dropdown-divider d-md-none"></div>
+                    </li>
+                    <li class="nav-item d-none d-md-block cmMenuTop7 scrollHide">
+                        <a class="mainBtn orangeBackground" href="#"><span>Login</span></a>
+                    </li>
+                    <li class="nav-item cmMenuTop7 scrollShow">
+                        <a href="#" class="mainBtn mixBackground">
+                            <span>Start you free trial</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FR
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width: 50px">
+                                <a class="dropdown-item" href="#">EN</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menuBack text-center d-sm-block d-md-none">
+                    <a href="#" class="mainBtn mixBackground">
+                        <span>Start you free trial</span>
+                    </a>
+                    <p class="alreadyAccountText">
+                        Already an account?
+                    </p>
+                    <a href="#" class="alreadyAccountTextA">Log In</a>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
 </section>
+<!-- NAVIGATION BAR END-->
+<div class="margintop118"></div>
+
 <section class="margingTopBottom114">
     <div class="container">
         <div class="d-flex justify-content-center">
@@ -317,10 +376,10 @@
                 <p>JulieDesk develops AI-based virtual assistants that schedule meetings and lead your digital communication.</p>
             </div>
             <!-- Grid column -->
-            <hr class="clearfix w-100 d-md-none">
+
             <!-- Grid column -->
-            <div class="col-md-2 mx-auto"></div>
-            <div class="col-md-2 mx-auto">
+            <div class="col-md-2 d-none d-md-block"></div>
+            <div class="col-md-2 mobFoot">
                 <!-- Links -->
                 <h5 class="font-weight-bold text-uppercase mt-3">Solution</h5>
                 <ul class="list-unstyled">
@@ -341,10 +400,10 @@
             </div>
             <!-- Grid column -->
 
-            <hr class="clearfix w-100 d-md-none">
+
 
             <!-- Grid column -->
-            <div class="col-md-2 mx-auto">
+            <div class="col-md-2 mobFoot">
 
                 <!-- Links -->
                 <h5 class="font-weight-bold text-uppercase mt-3">Resources</h5>
@@ -367,10 +426,10 @@
             </div>
             <!-- Grid column -->
 
-            <hr class="clearfix w-100 d-md-none">
+
 
             <!-- Grid column -->
-            <div class="col-md-2 mx-auto">
+            <div class="col-md-2 mobFoot">
 
                 <!-- Links -->
                 <h5 class="font-weight-bold text-uppercase mt-3 ">ABOUT US</h5>
@@ -392,7 +451,27 @@
 
             </div>
             <!-- Grid column -->
-
+            <div class="col-md-2 mobFoot d-md-none" style="padding: 0px;">
+                <h5 class="font-weight-bold text-uppercase mt-3 ">&nbsp;</h5>
+                <div class="flex-center">
+                    <!-- Facebook -->
+                    <a class="fb-ic socialBack">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic socialBack">
+                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic socialBack">
+                        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic socialBack">
+                        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                </div>
+            </div>
         </div>
         <!-- Grid row -->
 
