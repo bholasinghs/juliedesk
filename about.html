@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Julie Desk</title>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bc5ac26f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+
+        $(function () {
+            'use strict'
+
+            $("[data-trigger]").on("click", function(){
+                var trigger_id =  $(this).attr('data-trigger');
+                $(trigger_id).toggleClass("show");
+                $('body').toggleClass("offcanvas-active");
+            });
+
+            // close if press ESC button
+            $(document).on('keydown', function(event) {
+                if(event.keyCode === 27) {
+                    $(".navbar-collapse").removeClass("show");
+                    $("body").removeClass("overlay-active");
+                }
+            });
+
+            // close button
+            $(".btn-close").click(function(e){
+                $(".navbar-collapse").removeClass("show");
+                $("body").removeClass("offcanvas-active");
+            });
+
+            $(document).scroll(function () {
+                var $nav = $(".fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+
+
+            $(".btn-vedio").mouseover(function(){
+                $(".btn-vedio-text").html("Connectez-vous <i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i>")
+            }).mouseout(function () {
+                $(".btn-vedio-text").html("Discover in video <i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i>")
+            })
+        })
+    </script>
+</head>
+<body>
+<!-- NAVIGATION BAR START-->
+<section class="julie-header fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand julie-logo" href="index.html" title="Julie Desk"></a>
+            <button class="navbar-toggler border-0" type="button" data-trigger="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-end" id="main_nav">
+                <div class="offcanvas-header mt-3">
+                    <button class="btn btn-close float-right"> x </button>
+                    <h5 class="py-2"><a class="navbar-brand julie-logo popLogo" href="index.html" title="Julie Desk"></a></h5>
+                </div>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown" id="servicesId">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-divider d-md-none"></div>
+                        <div class="dropdown-menu menuHead c-box c-box--arrow-top" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="teddy.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/teddy.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Teddy</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>Automated meeting scheduling without the back and forth emailing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="violetta.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/violetta@2x.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Violetta</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>Takes over all aspects of scheduling in order to save you time</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="julie.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/julie@2x.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Julie</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>Besides meetings organization, Julie will also book restaurants, meeting rooms for you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="cm.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/paul.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Paul</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>A solution to help you manage and improve your digital communication.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--                                <div class="dropdown-divider d-none d-md-block"></div>-->
+                            <a class="connect d-none d-md-block" href="#">
+                                <span class="connect-span">All our products</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="package.html">Pricing</a>
+                        <div class="dropdown-divider d-md-none"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                        <div class="dropdown-divider d-md-none"></div>
+                    </li>
+                    <li class="nav-item d-none d-md-block cmMenuTop7 scrollHide">
+                        <a class="mainBtn orangeBackground" href="#"><span>Login</span></a>
+                    </li>
+                    <li class="nav-item cmMenuTop7 scrollShow">
+                        <a href="#" class="mainBtn mixBackground">
+                            <span>Start you free trial</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FR &nbsp; <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width: 50px">
+                                <a class="dropdown-item" href="#">EN</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menuBack text-center d-sm-block d-md-none">
+                    <a href="#" class="mainBtn mixBackground">
+                        <span>Start you free trial</span>
+                    </a>
+                    <p class="alreadyAccountText">
+                        Already an account?
+                    </p>
+                    <a href="#" class="alreadyAccountTextA">Log In</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+<!-- NAVIGATION BAR END-->
+<div class="margintop118"></div>
+<section class="my-5">
+    <div class="teamPics container">
+        <img src="assets/images/1500x966-julie-desk-team.png" alt="team-img" style="width:100%;border: 1px solid #707070;">
+        <div class="content">
+            <h1 class="centered teamPicsText">At JulieDesk,<br> We believe in technology that makes your lives easier</h1>
+        </div>
+    </div>
+</section>
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h6 class="whatWedo">Juliedesk</h6>
+                <h1 class="aboutValues"><span class="textBrown">Our</span> <span class="textPurpel"> Values</span></h1>
+                <div class="d-flex justify-content-center">
+                    <p class="aboutValuesP">What characterize us: A taste for challenge and perfection. <br>Check our core values and let us know if you share them!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col aboutImg">
+                <img src="assets/images/1-card challenge & improve.png" alt="Avatar" class="image" style="width:100%">
+                <div class="overlayGreen">
+                    <h1 class="text">Challenge & <br> Improve</h1>
+                </div>
+            </div>
+            <div class="col aboutImg">
+                <img src="assets/images/2-card sky is the limit.png" alt="Avatar" class="image" style="width:100%">
+                <div class="overlayOrange">
+                    <h1 class="text">Sky is the limit</h1>
+                </div>
+            </div>
+            <div class="col aboutImg">
+                <img src="assets/images/3-card straight to the point.png" alt="Avatar" class="image" style="width:100%">
+                <div class="overlayPurpel">
+                    <h1 class="text">Straight to<br> the Point</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row aboutMargin14">
+            <div class="col aboutImg">
+                <img src="assets/images/4-card meet your goals.png" alt="Avatar" class="image" style="width:100%">
+                <div class="overlayPurpel">
+                    <h1 class="text">Meet your goals<br>no matter how</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row aboutMargin14">
+            <div class="col aboutImg">
+                <img src="assets/images/5-card trust your decisions.png" alt="Avatar" class="image" style="width:100%">
+                <div class="overlayOrange">
+                    <h1 class="text">Trust your decisions</h1>
+                </div>
+            </div>
+            <div class="col aboutImg">
+                <img src="assets/images/6-card put yourselft in other's shoes.png" alt="Avatar" class="image" style="width:100%">
+                <div class="overlayGreen">
+                    <h1 class="text">Put yourself in <br> other's shoes</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row aboutMargin14">
+            <div class="col aboutImg">
+                <img src="assets/images/7-card-apologize-than-ask-for-permission.png" alt="Avatar" class="image" style="width:100%">
+                <div class="overlayPurpel">
+                    <h1 class="text">You had rather apologize than ask for permission</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row aboutMargin14">
+            <div class="col aboutImg">
+                <img src="assets/images/8-card Sincerity builds trust.png" alt="Avatar" class="image" style="width:100%">
+                <div class="overlayGreen">
+                    <h1 class="text">Sincerity builds trust</h1>
+                </div>
+            </div>
+            <div class="col aboutImg">
+                <img src="assets/images/9-Enjoy life.png" alt="Avatar" class="image" style="width:100%">
+                <div class="overlayOrange">
+                    <h1 class="text">Enjoy life</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="margintop140">
+
+</div>
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 aboutTeamBoxImg">
+                <div class="card aboutTeamBox purpelBackgroundHover">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="assets/images/Card-background.png" class="img-fluid" alt="Julien Hobeika">
+                            <img src="assets/images/NicolasMarlier.png" class="img-fluid img-top" alt="Julien Hobeika">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block aboutTeamBoxCardDeatails">
+                                <h4>Julien Hobeika</h4>
+                                <h5>CEO</h5>
+                                <p>« It takes resilience to get What you want »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 aboutTeamBoxImg">
+                <div class="card aboutTeamBox orangeBackgroundHover NicolasMarlierHover">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="assets/images/NicolasMarlier.png" class="img-fluid" alt="Nicolas Marlier">
+                            <img src="assets/images/Card-background.png" class="img-fluid img-top" alt="Nicolas Marlier">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block aboutTeamBoxCardDeatails">
+                                <h4>Nicolas Marlier</h4>
+                                <h5>CTO</h5>
+                                <p class="onhoveNone">« There are those who understand binary and those who don’t »</p>
+                                <p class="onhoveActive">Call me bob</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row aboutMargin19">
+            <div class="col-md-6 aboutTeamBoxImg">
+                <div class="card aboutTeamBox greenBackgroundHover GarisOnhover">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="assets/images/Garis.png" class="img-fluid" alt="Garis">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block aboutTeamBoxCardDeatails">
+                                <h4>Frédéric Grais</h4>
+                                <h5>Developer</h5>
+                                <p class="onhoveNone">« Everything is under Control »</p>
+                                <p class="onhoveActive">Are you on the list?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 aboutTeamBoxImg">
+                <div class="card aboutTeamBox purpelBackgroundHover CarolineBaronOnhover">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="assets/images/CarolineBaron.png" class="img-fluid" alt="Caroline Baron">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block aboutTeamBoxCardDeatails">
+                                <h4>Caroline Baron</h4>
+                                <h5>Marketing</h5>
+                                <p class="onhoveNone">« Marketing is really just Flirting »</p>
+                                <p class="onhoveActive">Measure twice, cut once</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row aboutMargin19">
+            <div class="col-md-6 aboutTeamBoxImg">
+                <div class="card aboutTeamBox orangeBackgroundHover YacineElliqOnhover">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="assets/images/YacineElliq.png" class="img-fluid" alt="Yacine Elliq">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block aboutTeamBoxCardDeatails">
+                                <h4>Yacine Elliq</h4>
+                                <h5>Product Analyst</h5>
+                                <p class="onhoveNone">Quod erat<br>Demonstrandum</p>
+                                <p class="onhoveActive">« Kiotsuke »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 aboutTeamBoxImg">
+                <div class="card aboutTeamBox greenBackgroundHover VladanDjeric">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="assets/images/VladanDjeric.png" class="img-fluid" alt="Vladan Djeric">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block aboutTeamBoxCardDeatails">
+                                <h4>Vladan Djeric</h4>
+                                <h5>Lead developer</h5>
+                                <p class="onhoveNone">« It’s impossible?<br>Let’s do it »</p>
+                                <p class="onhoveActive">« But before, let's eat<br>something »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row aboutMargin19">
+            <div class="col-md-6 aboutTeamBoxImg">
+                <div class="card aboutTeamBox purpelBackgroundHover XavierVanmeerbeck">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="assets/images/XavierVanmeerbeck.png" class="img-fluid" alt="Xavier Vanmeerbeck">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block aboutTeamBoxCardDeatails">
+                                <h4>Xavier Vanmeerbeck</h4>
+                                <h5>System administrator</h5>
+                                <p class="onhoveNone">« Try and fail but never <br>failli to try »</p>
+                                <p class="onhoveActive">« Luck never gives; it only<br>lends »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 aboutTeamBoxImg">
+                <div class="card aboutTeamBox orangeBackgroundHover MargotCarrion">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="assets/images/MargotCarrion.png" class="img-fluid" alt="Margot Carrion">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block aboutTeamBoxCardDeatails">
+                                <h4>Margot Carrion</h4>
+                                <h5>Customer succes</h5>
+                                <p class="onhoveNone">« Offer each customer a Unique experience »</p>
+                                <p class="onhoveActive">« Always make golden<br>cookies »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row aboutMargin19">
+            <div class="col-md-3 d-none d-sm-block"></div>
+            <div class="col-md-6 aboutTeamBoxImg">
+                <div class="card aboutTeamBox greenBackgroundHover ThibaultDevall">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="assets/images/ThibaultDevall.png" class="img-fluid" alt="Thibault Devallé">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block aboutTeamBoxCardDeatails">
+                                <h4>Thibault Devallé</h4>
+                                <h5>Sales</h5>
+                                <p class="onhoveNone">« Talking is a need, Listening is an art »</p>
+                                <p class="onhoveActive">« For those about to rock, <br>we salute you »</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-sm-block"></div>
+        </div>
+    </div>
+
+</section>
+
+<div class="margintop178"></div>
+
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="aboutValues"><span class="textBrown">Our job</span> <span class="textPurpel"><br> opportunities</span></h1>
+            </div>
+        </div>
+        <div class="row aboutTeamBoxJobs">
+            <div class="col-md-12 aboutTeamBoxJobsInnerDiv">
+                <h1>
+                    Product Marketing Manager
+                </h1>
+                <p>
+                    <span class="textPurpelNew">Product Marketing Team,</span><span class="textGray"> London</span>
+                </p>
+            </div>
+            <div class="col-md-12 aboutTeamBoxJobsInnerDiv">
+                <h1>
+                    Finance and Strategy Manager
+                </h1>
+                <p>
+                    <span class="textPurpelNew">F&S Business Partners Team,</span><span class="textGray"> Singapore</span>
+                </p>
+            </div>
+        </div>
+        <div class="marginBottom210"></div>
+    </div>
+</section>
+<!-- Footer -->
+<hr class="hrdown"/>
+<footer class="page-footer font-small stylish-color-dark pt-4 julie-footertop">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-4">
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mt-3"><img src="assets/images/Logo.png"></h5>
+                <p>JulieDesk develops AI-based virtual assistants that schedule meetings and lead your digital communication.</p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 d-none d-md-block"></div>
+            <div class="col-md-2 mobFoot">
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3">Solution</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Features</a>
+                    </li>
+                    <li>
+                        <a href="#!">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#!">Free trial</a>
+                    </li>
+                    <li>
+                        <a href="#!">Try Teddy</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+
+
+            <!-- Grid column -->
+            <div class="col-md-2 mobFoot">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3">Resources</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#!">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#!">Security</a>
+                    </li>
+                    <li>
+                        <a href="#!">FAQ</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+
+
+            <!-- Grid column -->
+            <div class="col-md-2 mobFoot">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 ">ABOUT US</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Team</a>
+                    </li>
+                    <li>
+                        <a href="#!">Recruitment</a>
+                    </li>
+                    <li>
+                        <a href="#!">Press room</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 mobFoot d-md-none" style="padding: 0px;">
+                <h5 class="font-weight-bold text-uppercase mt-3 ">&nbsp;</h5>
+                <div class="flex-center">
+                    <!-- Facebook -->
+                    <a class="fb-ic socialBack">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic socialBack">
+                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic socialBack">
+                        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic socialBack">
+                        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="julie-footertop-copyright text-left py-3"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p style="position: relative;bottom: 5px;">Copyright © 2020 JulieDesk. Tous droits réservés.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</body>
+</html>

@@ -7,7 +7,12 @@ html, body {
 .active{
     color: #FF6060 !important;
 }
-
+#dropdownMenuLink.dropdown-toggle::after{
+    display: none !important;
+}
+.plays{
+    font-size: 13px;
+}
 
 /*********** change button****************************/
 
@@ -196,7 +201,6 @@ html, body {
 .serviceslists {
     color: #471E60;
     opacity: 1;
-    height: 48px;
 }
 .serviceslists p{
     text-align: left;
@@ -482,6 +486,7 @@ html, body {
     letter-spacing: 0px;
     color: #2D2777;
     opacity: 1;
+    margin-top: 47px;
 }
 .packages-card-text{
     text-align: center;
@@ -619,11 +624,11 @@ html, body {
     margin-bottom: 18px;
 }
 .listsbody{
-    margin-bottom: 20px;
+    margin-bottom: unset;
 }
 .listsbody p{
     text-align: left;
-    font: 500 16px/20px Poppins;
+    font: 500 16px/24px Montserrat;
     letter-spacing: 0px;
     color: #471E60;
     opacity: 1;
@@ -650,7 +655,7 @@ html, body {
     border-radius: 6px;
     border-image-source: linear-gradient(313deg, #FF6060 0%, #AC45F8 100%);
     -webkit-linear-gradient: linear-gradient(313deg, #FF6060 0%, #AC45F8 100%);
-    height: 296px;
+    height: 283px;
     background-clip: padding-box;
     position: relative;
     margin-bottom: 202px;
@@ -672,8 +677,8 @@ html, body {
     color: #FF6060;
     text-transform: uppercase;
     opacity: 1;
-    padding-top: 28px;
-    padding-left: 75px;
+    padding-top: 36px;
+    padding-left: 49px;
     padding-bottom: 4px;
 }
 .enterprise-head{
@@ -683,7 +688,8 @@ html, body {
     color: #1F1B4E;
     opacity: 1;
     height: 33px;
-    padding-left: 75px;
+    padding-left: 49px;
+    margin-top: 10px;
 }
 .enterprise-body{
     text-align: left;
@@ -692,16 +698,16 @@ html, body {
     color: #1F1B4E;
     opacity: 1;
     width: 671px;
-    padding-left: 75px;
+    padding-left: 46px;
     margin-bottom: 27px;
 }
 .enterprise-img{
     position: absolute;
-    left: -103px;
-    top: -30px;
+    left: -73px;
+    top: -43px;
 }
 .enterprise-btn{
-    margin-left: 67px;
+    margin-left: 50px;
 }
 .comparsion-topBottom-margin{
     margin-top: 121px !important;
@@ -976,6 +982,15 @@ html, body {
 /*    height: 71px;*/
 /*    margin-top: 118px;*/
 /*}*/
+.width466{
+    width: 466px;
+}
+.width474{
+    width: 474px;
+}
+.width467{
+    width: 467px;
+}
 .julie-head-desc{
     text-align: left;
     font: 300 20px/28px Montserrat;
@@ -1049,6 +1064,10 @@ html, body {
 /*    width: 485px;*/
 /*    height: 71px;*/
 /*}*/
+.IlluviolettaImgTop{
+    width: 594px;
+    height: 569px;
+}
 .violetta-head-desc{
     text-align: left;
     font: 300 20px/28px Montserrat;
@@ -1097,6 +1116,17 @@ html, body {
     position: absolute;
     left: 19px;
     top: 121px;
+}
+.margintop106{
+    margin-top: 106px;
+}
+.marginBotton104{
+    margin-bottom: 104px;
+}
+.teddyPaulHero{
+    width: 475px;
+    height: 435px;
+    margin-left: 50px;
 }
 .teddy-top-heading-h1{
     font: 500 28px/38px Poppins;
@@ -1382,9 +1412,12 @@ html, body {
 .julie-banner-right-content img{
     height: 514px;
     width: 708px;
-    margin-top: -15px;
+    /*margin-top: -15px;*/
 }
-
+/*************************************************************************************************************************/
+/************************************ MOBILE ********************************************************************/
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
 @media(max-width:768px) {
     .scrollHide,.scrollShow,.mobFrLang{
         display: none!important;
@@ -1470,14 +1503,9 @@ html, body {
         font: 600 22px/38px Poppins;
     }
     .whatWedo{
-        text-align: center;
         font: 600 14px/21px Poppins;
-        letter-spacing: 0px;
-        color: #A6ADBA;
-        text-transform: uppercase;
-        opacity: 1;
     }
-    .personalAssistantLeft img, .communityManagerRight img, #carouselFeed{
+    .personalAssistantLeft img, .communityManagerRight img, #carouselFeed, .IlluviolettaImgTop{
         width: 100%;
         height: auto;
     }
@@ -1503,7 +1531,12 @@ html, body {
         margin-top: 1rem;
         float:left;
     }
-
+    .teddyPaulHero{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: unset;
+    }
     .founderText{
         font: 500 13px/9px Poppins;
         text-align: left;
@@ -2006,6 +2039,7 @@ html, body {
         font-size: 22px;
     }
 
+
 }
 
 
@@ -2016,6 +2050,292 @@ body.offcanvas-active{
 .underline{
     text-decoration: underline;
 }
+/***********************************************************************/
+/***********************************************************************/
+/***********************************************************************/
+/***********************************************************************/
+.teamPics {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.teamPics img {vertical-align: middle;}
+
+.teamPics .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(123, 49, 178); /* Fallback color */
+    background: rgba(123, 49, 178, 0.6); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    height:100%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.teamPicsText{
+    font: 700 40px/48px Sofia Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 686px;
+}
+/************************************************************************************************/
+/************************************About us************************************************************/
+.aboutValues{
+    text-align: center;
+    font: 700 40px/40px Poppins;
+    letter-spacing: 0px;
+}
+.aboutValuesP{
+    margin-top: 14px;
+    text-align: center;
+    font: 300 20px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #4A4B4D;
+    opacity: 1;
+    width: 906px;
+}
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlayGreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.aboutImg:hover .overlayGreen {
+    opacity: 1;
+    background: rgba(25, 195, 185, 0.6);
+}
+.overlayOrange {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.aboutImg:hover .overlayOrange {
+    opacity: 1;
+    background: rgba(255, 96, 96, 0.6);
+}
+.overlayPurpel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.aboutImg:hover .overlayPurpel {
+    opacity: 1;
+    background: rgba(129, 116, 250, 0.6);
+}
+
+.text {
+    font: 700 32px/40px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.aboutMargin14{
+    margin-top: 14px;
+}
+.aboutTeamBox{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 50px #AC45F81A;
+    border-radius: 4px;
+    opacity: 1;
+    border: unset;
+}
+.aboutTeamBoxCardDeatails{
+    padding-left: 40px;
+    padding-top: 66px;
+}
+.aboutTeamBox h4{
+    text-align: left;
+    font: 500 28px/20px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.aboutTeamBox h5{
+    text-align: left;
+    font: 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.aboutTeamBox p{
+    text-align: left;
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    margin-top: 21px;
+}
+.aboutMargin19{
+    margin-top: 19px;
+}
+.aboutTeamBoxJobs{
+    margin-top: 130px;
+}
+.aboutTeamBoxJobs h1{
+    text-align: left;
+    font: 600 32px/48px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+}
+.aboutTeamBoxJobs p{
+    text-align: left;
+    font: 500 18px/27px Poppins;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.textPurpelNew{
+    color: #7B31B2;
+}
+.marginBottom210{
+    margin-bottom: 210px;
+}
+
+.aboutTeamBoxJobsInnerDiv{
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.aboutTeamBoxJobsInnerDiv:hover{
+    background-color: #EEE6FF;
+}
+/*****************************************************************************************************/
+
+.aboutTeamBoxImg .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.aboutTeamBoxImg:hover .img-top {
+    display: inline;
+}
+.aboutTeamBoxImg:hover h4{
+    color: #FFFFFF;
+}
+.aboutTeamBoxImg:hover h5{
+    color: #FFFFFF;
+}
+.aboutTeamBoxImg:hover p{
+    color: #FFFFFF;
+}
+.purpelBackgroundHover:hover{
+    background-color: #AC45F8 !important;
+}
+.orangeBackgroundHover:hover{
+    background-color: #FF6060 !important;
+}
+.greenBackgroundHover:hover{
+    background-color: #19C3B9 !important;
+}
+
+
+.onhoveActive{
+    display: none;
+}
+.NicolasMarlierHover:hover .onhoveActive{
+    display: block;
+    color: #FFFFFF;
+}
+.NicolasMarlierHover:hover .onhoveNone{
+    display: none;
+}
+.GarisOnhover:hover .onhoveActive{
+    display: block;
+    color: #FFFFFF;
+}
+.GarisOnhover:hover .onhoveNone{
+    display: none;
+}
+.CarolineBaronOnhover:hover .onhoveActive{
+    display: block;
+    color: #FFFFFF;
+}
+.CarolineBaronOnhover:hover .onhoveNone{
+    display: none;
+}
+.YacineElliqOnhover:hover .onhoveActive{
+    display: block;
+    color: #FFFFFF;
+}
+.YacineElliqOnhover:hover .onhoveNone{
+    display: none;
+}
+.VladanDjeric:hover .onhoveActive{
+    display: block;
+    color: #FFFFFF;
+}
+.VladanDjeric:hover .onhoveNone{
+    display: none;
+}
+.XavierVanmeerbeck:hover .onhoveActive{
+    display: block;
+    color: #FFFFFF;
+}
+.XavierVanmeerbeck:hover .onhoveNone{
+    display: none;
+}
+.MargotCarrion:hover .onhoveActive{
+    display: block;
+    color: #FFFFFF;
+}
+.MargotCarrion:hover .onhoveNone{
+    display: none;
+}
+.ThibaultDevall:hover .onhoveActive{
+    display: block;
+    color: #FFFFFF;
+}
+.ThibaultDevall:hover .onhoveNone{
+    display: none;
+}
+/************************************************************************************************/
+/************************************************************************************************/
 @media (max-width: 992px) {
     .offcanvas-header{ display:block; }
     .navbar-collapse {
@@ -2035,4 +2355,311 @@ body.offcanvas-active{
         visibility: visible;
         transform: translateX(-100%);
     }
+    .teamPicsText{
+        width: auto;
+    }
+    .aboutTeamBoxCardDeatails {
+        padding-left: 26px;
+        padding-top: 40px;
+    }
+    .aboutTeamBoxJobs h1, .aboutTeamBoxJobs p{
+        text-align: center;
+    }
+}
+/* poppins-300 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Poppins Light'), local('Poppins-Light'),
+    url('../fonts/poppins-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-regular - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+    url('../fonts/poppins-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-500 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Poppins Medium'), local('Poppins-Medium'),
+    url('../fonts/poppins-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-600 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+    url('../fonts/poppins-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-700 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Poppins Bold'), local('Poppins-Bold'),
+    url('../fonts/poppins-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-800 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
+    url('../fonts/poppins-v12-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v12-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-900 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Poppins Black'), local('Poppins-Black'),
+    url('../fonts/poppins-v12-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v12-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-100 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/montserrat-v14-latin-100.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Thin'), local('Montserrat-Thin'),
+    url('../fonts/montserrat-v14-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-100.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-100.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-100italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 100;
+    src: url('../fonts/montserrat-v14-latin-100italic.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Thin Italic'), local('Montserrat-ThinItalic'),
+    url('../fonts/montserrat-v14-latin-100italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-100italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-100italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-100italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-100italic.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-200 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/montserrat-v14-latin-200.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'),
+    url('../fonts/montserrat-v14-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-200.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-200.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-200italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 200;
+    src: url('../fonts/montserrat-v14-latin-200italic.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic'),
+    url('../fonts/montserrat-v14-latin-200italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-200italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-200italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-200italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-200italic.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-300 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v14-latin-300.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+    url('../fonts/montserrat-v14-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-300.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-300italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v14-latin-300italic.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'),
+    url('../fonts/montserrat-v14-latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-300italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-300italic.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v14-latin-italic.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Italic'), local('Montserrat-Italic'),
+    url('../fonts/montserrat-v14-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-italic.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-500 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v14-latin-500.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+    url('../fonts/montserrat-v14-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-500.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-500.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-500italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v14-latin-500italic.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'),
+    url('../fonts/montserrat-v14-latin-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-500italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-500italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-500italic.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-600 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v14-latin-600.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url('../fonts/montserrat-v14-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-600.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-600italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v14-latin-600italic.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'),
+    url('../fonts/montserrat-v14-latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-600italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-600italic.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/montserrat-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-700italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin-700italic.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'),
+    url('../fonts/montserrat-v14-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-700italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-700italic.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-800 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v14-latin-800.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+    url('../fonts/montserrat-v14-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-800.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-800.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-800italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v14-latin-800italic.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'),
+    url('../fonts/montserrat-v14-latin-800italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-800italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-800italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-800italic.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-900 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v14-latin-900.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Black'), local('Montserrat-Black'),
+    url('../fonts/montserrat-v14-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-900.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-900italic - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v14-latin-900italic.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'),
+    url('../fonts/montserrat-v14-latin-900italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v14-latin-900italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v14-latin-900italic.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v14-latin-900italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/montserrat-v14-latin-900italic.svg#Montserrat') format('svg'); /* Legacy iOS */
 }

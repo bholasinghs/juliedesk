@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Julie Desk</title>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/9bc5ac26f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+        $(function () {
+            'use strict'
+
+            $("[data-trigger]").on("click", function(){
+                var trigger_id =  $(this).attr('data-trigger');
+                $(trigger_id).toggleClass("show");
+                $('body').toggleClass("offcanvas-active");
+            });
+
+            // close if press ESC button
+            $(document).on('keydown', function(event) {
+                if(event.keyCode === 27) {
+                    $(".navbar-collapse").removeClass("show");
+                    $("body").removeClass("overlay-active");
+                }
+            });
+
+            // close button
+            $(".btn-close").click(function(e){
+                $(".navbar-collapse").removeClass("show");
+                $("body").removeClass("offcanvas-active");
+            });
+
+            $(document).scroll(function () {
+                var $nav = $(".fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+
+
+            $(".btn-vedio").mouseover(function(){
+                $(".btn-vedio-text").html("Connectez-vous <i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i>")
+            }).mouseout(function () {
+                $(".btn-vedio-text").html("Discover in video <i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i>")
+            })
+        })
+    </script>
+</head>
+<body>
+<!-- NAVIGATION BAR START-->
+<section class="julie-header fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand julie-logo" href="index.html" title="Julie Desk"></a>
+            <button class="navbar-toggler border-0" type="button" data-trigger="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-end" id="main_nav">
+                <div class="offcanvas-header mt-3">
+                    <button class="btn btn-close float-right"> x </button>
+                    <h5 class="py-2"><a class="navbar-brand julie-logo popLogo" href="index.html" title="Julie Desk"></a></h5>
+                </div>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown" id="servicesId">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-divider d-md-none"></div>
+                        <div class="dropdown-menu menuHead c-box c-box--arrow-top" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="teddy.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/teddy.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Teddy</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>Automated meeting scheduling without the back and forth emailing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="violetta.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/violetta@2x.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Violetta</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>Takes over all aspects of scheduling in order to save you time</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="julie.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/julie@2x.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Julie</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>Besides meetings organization, Julie will also book restaurants, meeting rooms for you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="cm.html">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col dp-inner-pad">
+                                            <img src="assets/images/paul.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5>Paul</h5>
+                                            <h6>Personal assistant</h6>
+                                            <p>A solution to help you manage and improve your digital communication.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!--                                <div class="dropdown-divider d-none d-md-block"></div>-->
+                            <a class="connect d-none d-md-block" href="#">
+                                <span class="connect-span">All our products</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="package.html">Pricing</a>
+                        <div class="dropdown-divider d-md-none"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                        <div class="dropdown-divider d-md-none"></div>
+                    </li>
+                    <li class="nav-item d-none d-md-block cmMenuTop7 scrollHide">
+                        <a class="mainBtn orangeBackground" href="#"><span>Login</span></a>
+                    </li>
+                    <li class="nav-item cmMenuTop7 scrollShow">
+                        <a href="#" class="mainBtn mixBackground">
+                            <span>Start you free trial</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FR
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width: 50px">
+                                <a class="dropdown-item" href="#">EN</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menuBack text-center d-sm-block d-md-none">
+                    <a href="#" class="mainBtn mixBackground">
+                        <span>Start you free trial</span>
+                    </a>
+                    <p class="alreadyAccountText">
+                        Already an account?
+                    </p>
+                    <a href="#" class="alreadyAccountTextA">Log In</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+<!-- NAVIGATION BAR END-->
+<div class="margintop118"></div>
+<section class="my-5">
+    <div class="container">
+        <div class="row julie-banner">
+            <div class="col-md-6 julie-banner-left-header">
+                <h1>
+                    JulieDesk, your <br>virtual assistant team
+                </h1>
+                <p>
+                    JulieDesk’s services, on the one hand, assure the flawless organization and management of your appointments directly in your calendar. On the other hand, Julie’s team is offering digital communication and community management adapted to your business.
+                </p>
+                <div class="top35">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <a href="#" class="mainBtn mixBackground">
+                                <span>Start you free trial</span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 mobMargin50">
+                            <a href="#" class="btn-circle btn-vedio">
+                                <span class="btn-vedio-text">Discover in video <i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 julie-banner-right-content">
+                <!--                        julie-banner-rightimg-->
+                <img src="assets/images/illu.png" class="img-fluid">
+            </div>
+        </div>
+        <!-- NAVIGATION BAR END-->
+        <!-- BODY PART START-->
+    </div>
+</section>
+<section class="my-5">
+    <div class="container">
+        <div class="row trustusbottom156">
+            <div class="col-md-12 trustus">
+                <h1>They trust us!</h1>
+                <div class="mx-auto d-block col-11 d-md-none">
+                    <marquee>
+                        <img src="assets/images/Logo CAMIF.png">
+                        <img src="assets/images/Logo AMETIX.png">
+                        <img src="assets/images/Logo BARTON.png">
+                        <img src="assets/images/Logo BREEGA.png">
+                        <img src="assets/images/Logo CATHAY.png">
+                        <img src="assets/images/Logo ENGIE.png">
+                        <img src="assets/images/Logo BOLLORE.png">
+                        <img src="assets/images/Logo AVOLTA.png">
+                        <img src="assets/images/Logo MAZARS.png">
+                        <img src="assets/images/Logo THEODO.png">
+                    </marquee>
+                </div>
+                <div class="mx-auto col-11 d-none d-md-block">
+                    <img src="assets/images/Logo CAMIF.png">
+                    <img src="assets/images/Logo AMETIX.png">
+                    <img src="assets/images/Logo BARTON.png">
+                    <img src="assets/images/Logo BREEGA.png">
+                    <img src="assets/images/Logo CATHAY.png">
+                    <img src="assets/images/Logo ENGIE.png">
+                    <img src="assets/images/Logo BOLLORE.png">
+                    <img src="assets/images/Logo AVOLTA.png">
+                    <img src="assets/images/Logo MAZARS.png">
+                    <img src="assets/images/Logo THEODO.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h6 class="whatWedo">What we do</h6>
+                <h1 class="ourServices"><span class="textBrown">Our</span> <span class="textPurpel">services</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 text-center d-none d-md-block">
+                <img src="assets/images/DotShape.png" alt="DotShape" class="dots">
+            </div>
+            <div class="col-md-4 serviceslistsMain ">
+                <div class="card-head card-service ml-n3"></div>
+                <div class="card-body">
+                    <img src="assets/images/icon.png">
+                    <h5 class="font-weight-bold mt-3 mb-4 cmpa">Community Management</h5>
+                    <div class="row serviceslists">
+                        <div class="col-md-1"><img src="assets/images/checkmark-circle-2.png"></div>
+                        <div class="col-md-10"><p>Managing your communication</p></div>
+                    </div>
+                    <div class="row serviceslists">
+                        <div class="col-md-1"><img src="assets/images/checkmark-circle-2.png"></div>
+                        <div class="col-md-10"><p>Increase the local visibility of your business</p></div>
+                    </div>
+                    <div class="row serviceslists">
+                        <div class="col-md-1"><img src="assets/images/checkmark-circle-2.png"></div>
+                        <div class="col-md-10"><p>Exclusive publications on your social networks</p></div>
+                    </div>
+                    <div class="d-flex m-lg-3">
+                        <a class="package-button" href="#"><span>See more</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 serviceslistsMain ">
+                <div class="card-head card-service mr-n3"></div>
+                <div class="card-body">
+                    <img src="assets/images/social-media-marketing.png">
+                    <h5 class="font-weight-bold mt-3 mb-4 cmpa">PA Services</h5>
+                    <div class="row serviceslists">
+                        <div class="col-md-1"><img src="assets/images/checkmark-circle-2.png"></div>
+                        <div class="col-md-10"><p>24/7 Services</p></div>
+                    </div>
+                    <div class="row serviceslists">
+                        <div class="col-md-1"><img src="assets/images/checkmark-circle-2.png"></div>
+                        <div class="col-md-10"><p>Meeting Management</p></div>
+                    </div>
+                    <div class="row serviceslists">
+                        <div class="col-md-1"><img src="assets/images/checkmark-circle-2.png"></div>
+                        <div class="col-md-10"><p>3 offers : Teddy, Violetta and Julie</p></div>
+                    </div>
+                    <div class="d-flex m-lg-3">
+                        <a class="package-button" href="#"><span>See more</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 text-center d-none d-md-block">
+                <img src="assets/images/DotShape.png" alt="DotShape" class="dots">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-5">
+    <div class="container">
+        <div class="row margingTop152">
+            <div class="col-md-12">
+                <h6 class="whatWedo">Our team</h6>
+                <h1 class="ourServices"><span class="textBrown">Do you need a </span> <span class="textPurpel">personal assistant?</span></h1>
+            </div>
+        </div>
+        <div class="row julie-banner personalAssistant">
+            <div class="col-md-6 personalAssistantLeft">
+                <img src="assets/images/Illu personnal assistant.png">
+            </div>
+            <div class="col-md-6 personalAssistantRight">
+                <h1>
+                    Teddy, Violetta & Julie
+                </h1>
+                <h6>PA TEAM</h6>
+                <p>
+                    Our fantastic PA team; Teddy, Violetta and Julie will help you gain time by taking over the scheduling process; starting from a 100% automated tool through a more personalized and sophisticated way of agenda management our team make sure you find the most suitable solution to your needs.
+                </p>
+                <div class="imgs">
+                    <img src="assets/images/1200px-Google_Calendar_icon.svg.png">
+                    <img src="assets/images/icons8-microsoft-office-2019-50.png">
+                    <img src="assets/images/icons8-microsoft-exchange-2019-50.png">
+                    <img src="assets/images/gmail.png">
+                    <img src="assets/images/google-hangouts.png">
+                    <img src="assets/images/icons8-zoom-50.png">
+                    <img src="assets/images/Zapier_logo.png">
+                </div>
+                <div class="d-flex btnCenter top35">
+                    <a class="package-button hoverVoliet" href="#"><span>Learn more</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-5">
+    <div class="container">
+        <div class="row margingTop152">
+            <div class="col-md-12">
+                <h6 class="whatWedo">Our team</h6>
+                <h1 class="ourServices"><span class="textBrown">Do you need a </span> <span class="textPurpel">community manager?</span></h1>
+            </div>
+        </div>
+        <div class="row communityManager">
+
+            <div class="col-md-6 communityManagerRight mobCmShow">
+                <img src="assets/images/Meet Paul illu.png">
+            </div>
+            <div class="col-md-6 communityManagerLeft">
+                <h1>
+                    Paul
+                </h1>
+                <h6 class="text-uppercase">community manager</h6>
+                <p>
+                    Paul and his team will help you manage and improve your digital communication on different social media tools; LinkedIN, Facebook, Google My Business and Instagram. As the master of community management, Paul’s team will handle the digital communication on social media to help you acquire new customers and qualified contacts.
+                </p>
+                <div class="imgs">
+                    <img src="assets/images/Zapier_logo.png">
+                    <img src="assets/images/gmail.png">
+                    <img src="assets/images/google-hangouts.png">
+                    <img src="assets/images/icons8-zoom-50.png">
+                </div>
+                <div class="d-flex btnCenter top35">
+                    <a class="cm-button" href="#"><span>Learn more</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 communityManagerRight mobCmHide">
+                <img src="assets/images/Meet Paul illu.png">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="testimonials">
+    <div class="container">
+        <div class="row margingTop152">
+            <div class="col-md-12" style="margin-top: 134px;">
+                <h6 class="whatWedo text-uppercase">Testimonials</h6>
+                <h1 class="feeback"><span class="textBrown">Clients’  </span> <span class="textPurpel">feedback</span></h1>
+            </div>
+        </div>
+        <div id="carouselFeed" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <p>« Julie helps me organizing and scheduling client meetings every day – but with a human touch. Working with executives, Julie is more effective and personal than any other calendar tool out there »</p>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="https://i.imgur.com/QptVdsp.jpg">
+                            </div>
+                            <div class="col-md-10">
+                                <p class="founderText">Julius Geis</p>
+                                <p class="foundationText">Founder of On Any Given Monday</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p>« For all those who like to organize their own meetings, fine, continue! But for the rest, there is JulieDesk! »</p>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="https://i.imgur.com/QptVdsp.jpg">
+                            </div>
+                            <div class="col-md-10">
+                                <p class="founderText">Cromption Greves</p>
+                                <p class="foundationText">Founder of Kerala VC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p>« A real time-saving and efficient tool: once I include Julie in the loop, I don’t worry about anything! »</p>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="https://i.imgur.com/jQWThIn.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-10">
+                                <p class="founderText">Harry Mon</p>
+                                <p class="foundationText">Founder of On Any Given Monday</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--                <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class='fas fa-arrow-left'></i> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <i class='fas fa-arrow-right'></i> </a>-->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselFeed" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselFeed" data-slide-to="1"></li>
+                <li data-target="#carouselFeed" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+<hr class="hrdown"/>
+<footer class="page-footer font-small stylish-color-dark pt-4 julie-footertop">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-4">
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mt-3"><img src="assets/images/Logo.png"></h5>
+                <p>JulieDesk develops AI-based virtual assistants that schedule meetings and lead your digital communication.</p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 d-none d-md-block"></div>
+            <div class="col-md-2 mobFoot">
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3">Solution</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Features</a>
+                    </li>
+                    <li>
+                        <a href="#!">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#!">Free trial</a>
+                    </li>
+                    <li>
+                        <a href="#!">Try Teddy</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+
+
+            <!-- Grid column -->
+            <div class="col-md-2 mobFoot">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3">Resources</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#!">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#!">Security</a>
+                    </li>
+                    <li>
+                        <a href="#!">FAQ</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+
+
+            <!-- Grid column -->
+            <div class="col-md-2 mobFoot">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 ">ABOUT US</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Team</a>
+                    </li>
+                    <li>
+                        <a href="#!">Recruitment</a>
+                    </li>
+                    <li>
+                        <a href="#!">Press room</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 mobFoot d-md-none" style="padding: 0px;">
+                <h5 class="font-weight-bold text-uppercase mt-3 ">&nbsp;</h5>
+                <div class="flex-center">
+                    <!-- Facebook -->
+                    <a class="fb-ic socialBack">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic socialBack">
+                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic socialBack">
+                        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic socialBack">
+                        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-2 "> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="julie-footertop-copyright text-left py-3"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p style="position: relative;bottom: 5px;">Copyright © 2020 JulieDesk. Tous droits réservés.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</body>
+</html>

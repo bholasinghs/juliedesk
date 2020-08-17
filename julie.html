@@ -43,9 +43,9 @@
                 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
             });
             $(".btn-vedio").mouseover(function(){
-                $(".btn-vedio-text").html("Connectez-vous <i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i>")
+                $(".btn-vedio-text").html("Connectez-vous <i class=\"fa fa-play-circle-o plays\" aria-hidden=\"true\"></i>")
             }).mouseout(function () {
-                $(".btn-vedio-text").html("Discover in video <i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i>")
+                $(".btn-vedio-text").html("Discover in video <i class=\"fa fa-play-circle-o plays\" aria-hidden=\"true\"></i>")
             })
         });
     </script>
@@ -153,7 +153,7 @@
                     <li class="nav-item d-none d-md-block">
                         <div class="dropdown">
                             <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                FR
+                                FR &nbsp; <i class="fa fa-angle-down"></i>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width: 50px">
                                 <a class="dropdown-item" href="#">EN</a>
@@ -195,7 +195,7 @@
                         </div>
                         <div class="col-md-5 mobMargin50">
                             <a href="#" class="btn-circle btn-vedio">
-                                <span class="btn-vedio-text">Discover in video <i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                                <span class="btn-vedio-text">Discover in video <i class="fa fa-play-circle-o plays" aria-hidden="true"></i></span>
                             </a>
                         </div>
                     </div>
@@ -217,10 +217,10 @@
         </div>
         <div class="row margintop123">
             <div class="col-md-6">
-                <h1 class="text-right packs-assist-h1-top-bottom margintop86">
+                <h1 class="text-right packs-assist-h1-top-bottom margintop86 width466">
                     Circle of trust
                 </h1>
-                <p class="text-right julie-assist-para">
+                <p class="text-right julie-assist-para width466">
                     Introduce external people to Julie! By registering them in your circle of trust, you allow your colleagues, clients or business contacts to ask Julie for setting up a meeting with you.
                 </p>
             </div>
@@ -233,20 +233,20 @@
                 <img src="assets/images/Illu Julie 2.png">
             </div>
             <div class="col-md-6">
-                <h1 class="packs-assist-h1-top-bottom margintop124">
+                <h1 class="packs-assist-h1-top-bottom margintop124 width474">
                     Faster handling time
                 </h1>
-                <p class="julie-assist-para">
+                <p class="julie-assist-para width474">
                     As Julie is a premium service for teams, she is working harder and faster to deliver results. The average handling time for her hits the 5 minutes limit.
                 </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <h1 class="text-right packs-assist-h1-top-bottom margintop109">
+                <h1 class="text-right packs-assist-h1-top-bottom margintop109 width474">
                     Restaurant reservation
                 </h1>
-                <p class="text-right julie-assist-para">
+                <p class="text-right julie-assist-para width474">
                     Don’t limit your important business meetings to be organized at the office or in a virtual meeting room. Julie is able to perfectly handle restaurant and bar reservations at any time.
                 </p>
             </div>
@@ -259,10 +259,10 @@
                 <img src="assets/images/Illu Calendar.png">
             </div>
             <div class="col-md-6">
-                <h1 class="packs-assist-h1-top-bottom margintop123">
+                <h1 class="packs-assist-h1-top-bottom margintop123 width474">
                     Meeting room management
                 </h1>
-                <p class="julie-assist-para">
+                <p class="julie-assist-para width474">
                     Still more convinced about having your meetings at the office? Julie will cross check available conference rooms and reserve it for the event.
                 </p>
             </div>
@@ -336,7 +336,21 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="d-flex justify-content-center">Join the community!</h1>
-                <div class="mx-auto d-block col-11">
+                <div class="mx-auto d-block col-11 d-md-none">
+                    <marquee>
+                        <img src="assets/images/Logo CAMIF.png">
+                        <img src="assets/images/Logo AMETIX.png">
+                        <img src="assets/images/Logo BARTON.png">
+                        <img src="assets/images/Logo BREEGA.png">
+                        <img src="assets/images/Logo CATHAY.png">
+                        <img src="assets/images/Logo ENGIE.png">
+                        <img src="assets/images/Logo BOLLORE.png">
+                        <img src="assets/images/Logo AVOLTA.png">
+                        <img src="assets/images/Logo MAZARS.png">
+                        <img src="assets/images/Logo THEODO.png">
+                    </marquee>
+                </div>
+                <div class="mx-auto col-11 d-none d-md-block">
                     <img src="assets/images/Logo CAMIF.png">
                     <img src="assets/images/Logo AMETIX.png">
                     <img src="assets/images/Logo BARTON.png">
