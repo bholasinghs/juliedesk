@@ -1,0 +1,285 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', 'Montserrat','Rubik','Muli';
+}
+.julie-logo{
+    width: 167px;
+    height: 35px;
+    background: transparent url('../images/Logo Juliedesk.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+.julie-header{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #AD58580F;
+    opacity: 1;
+}
+.connect{
+    border: 1px solid #FF6060;
+    border-radius: 28px;
+    opacity: 0.3;
+    text-align: center;
+    float: left;
+    margin-left: 41px;
+    margin-top: 5px;
+    padding: 16px 28px;
+}
+.connect-span{
+    text-align: center;
+    font: 600 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    opacity: 1;
+}
+.connect:hover{
+    text-decoration:none;
+}
+.navbar-light .navbar-nav .nav-link{
+    font: 400 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #2D2777;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    font: 400 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FF6060;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FF6060;
+}
+.nav-item{
+    margin-right: 31px;
+}
+.dp-inner-pad{
+    width: 0px;
+    padding-left: unset;
+    padding-right: unset;
+}
+.menuHead{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #2D277729;
+    border-radius: 6px;
+    opacity: 1;
+    border: 0;
+}
+.menuHead p{
+    white-space: inherit;
+    text-align: left;
+    font: 300 12px/16px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    opacity: 1;
+    width: 268px;
+}
+#servicesId .dropdown-menu{
+    width: 426px;
+    height: 503px;
+}
+#servicesId .dropdown-item:focus, #servicesId .dropdown-item{
+    width: 395px;
+    height: 98px;
+    white-space: inherit;
+}
+#servicesId .dropdown-item:focus, #servicesId .dropdown-item:hover{
+    background-color: #ffe6ea;
+    border-radius: 10px;
+    width: 395px;
+    margin-left: 14px;
+}
+#servicesId .dropdown-item img{
+    padding-top: 21px;
+    margin-right: 24px;
+}
+#servicesId .dropdown-item h5 {
+    text-align: left;
+    font: 600 16px/16px Poppins;
+    letter-spacing: 0px;
+    color: #471E60;
+    padding-top: 11px;
+}
+#servicesId .dropdown-item h6 {
+    text-align: left;
+    font: 500 12px/16px Montserrat;
+    letter-spacing: 0px;
+    color: #FF6060;
+}
+/********************************** Buttons *********************************************/
+.textGreen{
+    color: #19C3B9;
+}
+.greenBackground{
+    background-color: #19C3B9;
+}
+.deepGreenBackground{
+    background-color: #219D96;
+}
+.purpelBackground{
+    background-color: #AC45F8;
+}
+.orangeBackground{
+    background-color: #FF6060;
+}
+.grayBackground{
+    background-color: #F5F5FD;
+}
+.mixBackground{
+    background-image: linear-gradient(315deg, #FF6060 0%, #AC45F8 100%);
+    box-shadow: 0px 3px 20px #B447E933;
+}
+.mainBtn{
+    border-radius: 28px;
+    height: 55px;
+    padding: 16px 24px;
+}
+.mainBtn span {
+    text-align: center;
+    font: 500 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.mainBtn:hover {text-decoration: none;}
+/*******************************************************************************/
+.menuBack{
+    background: radial-gradient(174% 55% at top,transparent 43%,#FAF0FF 0);
+    /*width: 381px;*/
+    height: 218px;
+    padding-top: 94px;
+    position: relative;
+    bottom: -41%;
+    margin-left: -31px;
+    margin-right: -31px;
+}
+.cmMenuTop7{
+    padding-top: 7px;
+}
+/****************************************************/
+.scrollShow {
+    display:none;
+}
+.fixed-top.scrolled .scrollShow {
+    display: block;
+}
+
+.fixed-top.scrolled .scrollHide {
+    display:none;
+}
+
+
+/*********************************** Mobile ********************************************/
+@media(max-width:768px) {
+    .scrollHide,.scrollShow,.mobFrLang{
+        display: none!important;
+    }
+    .popLogo{
+        margin-top:unset;
+    }
+    /*.navbar-collapse {*/
+    /*    height: 90vh; !* Set to lower value, because*/
+    /*                 height = <total height> - <.navbar-header height>*/
+    /*                 so you will not lose the last menu *!*/
+    /*    max-height: 100vh!important; !* Or max-height: none!important;  *!*/
+    /*}*/
+    #servicesId .dropdown-menu, #servicesId .dropdown-item:hover, .menuHead p{
+        width: auto;
+        height: auto;
+    }
+    .navbar-toggler.collapsed .close-icon {
+        display: none;
+    }
+    /*.navbar-toggler:not(.collapsed) .navbar-toggler-icon {*/
+    /*    display: inline;*/
+    /*}*/
+
+    /*.navbar-toggler-icon {*/
+    /*    background-image: url(*/
+    /*    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(54, 57, 75, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");*/
+    /*}*/
+    .navbar-light .navbar-nav .nav-link{
+        text-align: left;
+        font: 500 16px/20px Montserrat;
+        letter-spacing: 0px;
+        color: #471E60;
+        opacity: 1;
+    }
+    .alreadyAccountText {
+        text-align: center;
+        font: 400 16px/24px Poppins;
+        letter-spacing: 0px;
+        color: #471E60;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+    .alreadyAccountTextA {
+        text-align: center;
+        text-decoration: underline;
+        font: 700 16px/24px Poppins;
+        letter-spacing: 0px;
+        color: #FF6060;
+    }
+    .menuHead {
+        background: unset;
+        box-shadow: unset;
+        border-radius: unset;
+        opacity: unset;
+        border: unset;
+    }
+    #servicesId .dropdown-item img{
+        width: 42px;
+        height: 42px;
+        padding-top: unset;
+        margin-right: unset;
+    }
+    #servicesId .dropdown-item{
+        width: auto;
+        height: auto;
+        white-space: inherit;
+        margin-left: -20px;
+    }
+    .dp-inner-pad{
+        padding-top: 44px;
+    }
+    .mainBtn{
+        padding: 13px 33px;
+    }
+    .mainBtn span{
+        text-align: center;
+        font: 500 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+}
+
+
+body.offcanvas-active{
+    overflow:hidden;
+}
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+    .offcanvas-header{ display:block; }
+    .navbar-collapse {
+        position: fixed;
+        top:0;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #FFFFFF;
+        transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+    }
+    .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+}

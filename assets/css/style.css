@@ -13,7 +13,9 @@ html, body {
 .plays{
     font-size: 13px;
 }
-
+.dropdown-toggle{
+    color: #2D2777!important;
+}
 /*********** change button****************************/
 
 /***************************************/
@@ -68,7 +70,7 @@ html, body {
 }
 .julie-banner-left-header h1{
     margin-top: 103px;
-    width: 624px;
+    width: 594px;
     height: 143px;
     text-align: left;
     font: 600 50px/54px Poppins;
@@ -82,8 +84,8 @@ html, body {
     letter-spacing: 0px;
     color: #471E60;
     opacity: 1;
-    width: 606px;
-    height: 142px;
+    width: 529px;
+    /*height: 142px;*/
 }
 .top35{
     margin-top: 35px;
@@ -398,6 +400,9 @@ html, body {
     color: #596372;
     opacity: 1;
 }
+.carousel-caption p{
+    color: #596372;
+}
 .carousel-indicators{
     top: 329px;
 }
@@ -413,7 +418,7 @@ html, body {
     text-align: left;
     font: 500 20px/24px Poppins;
     letter-spacing: 0px;
-    color: #1F1B4E;
+    color: #1F1B4E !important;
     opacity: 1;
 }
 .foundationText{
@@ -1267,7 +1272,7 @@ html, body {
     margin-left: .25em;
 }
 .login-width{
-    width: 377px;
+    width: 378px;
 }
 .login-pass{
     background: #E8FBEE 0% 0% no-repeat padding-box;
@@ -1411,373 +1416,14 @@ html, body {
 }
 .julie-banner-right-content img{
     height: 514px;
-    width: 708px;
-    /*margin-top: -15px;*/
-}
-/*************************************************************************************************************************/
-/************************************ MOBILE ********************************************************************/
-/*************************************************************************************************************************/
-/*************************************************************************************************************************/
-@media(max-width:768px) {
-    .scrollHide,.scrollShow,.mobFrLang{
-        display: none!important;
-    }
-
-    .justify-content-end{
-        z-index: 1;
-    }
-
-
-    .julie-banner{
-        height: auto;
-        margin-bottom: 0px;
-        width: auto;
-    }
-    .julie-banner-left-header h1{
-        width: 100%;
-        height: auto;
-        margin-top: 0px;
-        text-align: center;
-        font: 600 32px/38px Poppins;
-        letter-spacing: 0px;
-        color: #471E60;
-    }
-    .julie-banner-left-header p{
-        width: 100%;
-        height: auto;
-        text-align: center;
-        font: 300 14px/24px Montserrat;
-        letter-spacing: 0px;
-        color: #471E60;
-        opacity: 1;
-    }
-    .julie-banner-left-header .btn-freetrial{
-        width: 100%;
-        height: auto;
-        margin-top: 39px;
-        margin-left: 39px;
-    }
-    .julie-banner-right-content img{
-        height: auto;
-        width: auto;
-        margin-top: 50px;
-    }
-    .personalAssistant .button, .serviceslistsMain .button{
-        margin: 30px 64px
-    }
-    .personalAssistant h1{
-        text-align: center;
-        font: 700 24px/26px Poppins;
-        letter-spacing: 0px;
-        color: #4C2C64;
-        opacity: 1;
-        margin-top: 23px;
-    }
-    .personalAssistant h6{
-        text-align: center;
-        font: 600 14px/21px Poppins;
-        letter-spacing: 0px;
-        color: #FF6060;
-        text-transform: uppercase;
-        opacity: 1;
-    }
-    .personalAssistant p{
-        text-align: center;
-        font: 300 14px/24px Poppins;
-        letter-spacing: 0px;
-        color: #2C3439;
-        opacity: 1;
-    }
-    .imgs img {
-        margin-right: 12px;
-        width: 27px;
-        height: 26px;
-    }
-    .btn-vedio{
-        margin: 35px;
-        float: left;
-    }
-    .trustus h1{
-        margin-top: 100px;
-        text-align: center;
-        font: 600 22px/38px Poppins;
-    }
-    .whatWedo{
-        font: 600 14px/21px Poppins;
-    }
-    .personalAssistantLeft img, .communityManagerRight img, #carouselFeed, .IlluviolettaImgTop{
-        width: 100%;
-        height: auto;
-    }
-    .trustusbottom156{
-        margin-top: 40px;
-    }
-    .personalAssistantRight {
-        padding-left: 15px;
-        padding-top: 0;
-    }
-    .margingTop152{
-        margin-top: 100px;
-    }
-    .serviceslistsMain{
-        margin-bottom: 50px;
-    }
-    .communityManager .button{
-        margin: 64px;
-    }
-    .carousel-caption img {
-        width: 4rem;
-        border-radius: 4rem;
-        margin-top: 1rem;
-        float:left;
-    }
-    .teddyPaulHero{
-        width: 100%;
-        height: auto;
-        margin-top: 50px;
-        margin-left: unset;
-    }
-    .founderText{
-        font: 500 13px/9px Poppins;
-        text-align: left;
-        margin-left: 72px;
-        margin-top: -49px;
-    }
-    .foundationText{
-        font: 500 12px/16px Poppins;
-        letter-spacing: 0px;
-        text-align: left;
-        margin-left: 72px;
-    }
-    .carousel-caption {
-        position: initial;
-        z-index: 10;
-        padding: 3rem 2rem;
-        color: rgba(78, 77, 77, 0.856);
-        text-align: center;
-        font-size: 0.7rem;
-        font-style: italic;
-        font-weight: bold;
-        line-height: 1.5rem
-    }
-
-    .carousel-indicators{
-        top: 329px;
-    }
-    .carousel-indicators li{
-        width: 6px;
-        height: 6px;
-    }
-    .hrdown{margin-top: 100px;}
-    .julie-footertop img{
-        float: left!important;
-    }
-    /*.julie-footertop h5 {*/
-    /*    text-align: center;*/
-    /*}*/
-    .julie-footertop-copyright{
-        height: 96px;
-        margin-bottom: -72px
-    }
-    .julie-footertop p{
-        text-align: left;
-        clear: both;
-        padding-top: 16px;
-        font: 600 14px/24px Muli;
-    }
-.mobFoot{
-    width: 46%;
-    text-align: left;
-}
-.socialBack{
-    background: #EEE6FF 0% 0% no-repeat padding-box;
-    opacity: 1;
-    width: 38px;
-    height: 38px;
-    text-align: center;
-    padding: 12px;
-    float: left;
-    font-size: 12px;
-    margin-right: 3px;
+    width: 612px;
 }
 
-/******************************************************************************/
-    .packs-header-h1,.packagesHead, .packagesHead-p, .package-main-container, .home-container, .enterprise, .enterprise-h5, .enterprise-head, .enterprise-body,.card-head-name,.listshead{
-        text-align: center;
-        width: 100%;
-        height: auto;
-    }
-    .enterprise-img {
-        position: relative;
-        left: 0;
-        top: 0px;
-        width: 94%;
-        margin-top: 50px;
-    }
-    .mobSet{
-        text-align: center;
-        margin-top: 30px;
-    }
-    .card-head-des,.packages-cards-footer,.creditdetails-desc,.trustus{
-        text-align: center;
-    }
-    .listsbody p{
-        text-align: center;
-        margin-top: -22px;
-    }
-    .btn-freetrial{
-        margin: auto;
-    }
-    .creditdetails-head{
-        margin-top: -32px;
-        text-align: center;
-    }
-    .enterprise{
-        margin-left: 7px;
-    }
-    .enterprise-h5, .enterprise-head, .enterprise-body{
-        padding-left: 0px;
-    }
-    /*********************************************************************************/
-    .cmHead, .cmHead-p, .cm-container, .cm-container-img,.cmPaulDo-desc, .cm-cards-text,.cm-cards-title, .paul-skills-title, .paul-skills-desc, .online-visibility-desc, .online-visibility, .joinCm{
-        text-align: center;
-        width: 100%;
-        height: auto;
-    }
-    .btnCenter{
-        justify-content: center;
-    }
-    .paul-img {
-        position: absolute;
-        right: -11px;
-        top: -64px;
-        width: 48%;
-    }
-    /*********************************************************************************/
-    .packs-head-h1, .packs-assist-h1-top-bottom, .julie-head-desc,.top35,.julie-head-imgs,
-    .julie-assist-para,.violetta-head-desc,.width476,.teddy-top-heading-h1,.autofollow-desc,
-    .matrix-img1,.matrix-img2,.teddy-matrix-desc,.jobforms-h1,.jobsAvail,.jobforms-h2,.jobforms-p,.width377,.login-temp-img-back{
-        text-align: center!important;
-        width: 100%;
-        height: auto;
-    }
-    .btn-vedio {
-        margin: 5px;
-        float: inherit;
-    }
-    .ourServices{
-        margin-bottom: 0px;
-        text-align: center;
-        font: 700 24px/40px Poppins;
-    }
-    .cmpa{
-        text-align: left;
-        font: 700 18px/40px Montserrat;
-        letter-spacing: 0px;
-    }
-    img{
-        width: inherit;
-    }
-    .listsbody img, .serviceslists img{
-        width: 18px!important;
-        height: 18px!important;
-    }
-    .serviceslists p{
-        font: 500 12px/20px Montserrat;
-        letter-spacing: 0px;
-        color: #471E60;
-        opacity: 1;
-        margin-top: -36px;
-        margin-left: 22px;
-    }
-     .package-button{
-        height: 42px;
-        padding: 11px 24px;
-    }
-      .package-button span{
-        font: 500 14px/21px Poppins;
-        letter-spacing: 0px;
-    }
-
-    .mobCmHide{
-        display: none;
-    }
-    .mobCmShow{
-        display: block;
-    }
-    .communityManager h1{
-        text-align: center;
-        font: 700 24px/28px Poppins;
-        letter-spacing: 0px;
-        opacity: 1;
-    }
-    .communityManager h6{
-        text-align: center;
-        font: 600 14px/21px Poppins;
-        letter-spacing: 0px;
-        color: #FF6060;
-        text-transform: uppercase;
-        opacity: 1;
-    }
-    .communityManager p{
-        text-align: center;
-        font: 300 14px/24px Poppins;
-        letter-spacing: 0px;
-        color: #2C3439;
-        opacity: 1;
-    }
-    .imgs{
-        text-align: center;
-    }
-    .cm-button{
-        height: 42px;
-        padding: 11px 24px;
-    }
-    .cm-button span{
-        font: 500 14px/21px Poppins;
-        letter-spacing: 0px;
-    }
-    .feeback{
-        text-align: center;
-        font: 700 24px/35px Poppins;
-        letter-spacing: 0px;
-        opacity: 1;
-    }
-
-    .mobMargin50, .img-fluid{
-        margin-top: 50px;
-    }
-    .mobSize30{
-        width: 34px!important;
-        height: 34px!important;
-    }
-    .matrix-img2{
-        left: inherit;
-    }
-    .login-width{
-        width: max-content;
-    }
-    .freetrial-img {
-        position: unset;
-        left: 0;
-        width: inherit;
-    }
-
-    .btn-freetrial-text{
-        font: 500 14px/21px Poppins;
-    }
-
-}
 /**********************************************************************************************************************************************************************************************/
 /*********************************************************************************************************************************************************************************************************/
 /*****************************************************************************************************************************************************************************************************/
 /****************************************************** Navigaion menu **************************************************************************************/
-html, body {
-    height:100%;
-    margin:0;
-    padding:0;
-    font-family: 'Poppins', 'Montserrat','Rubik','Muli';
-}
+
 .julie-logo{
     width: 167px;
     height: 35px;
@@ -2334,6 +1980,7 @@ body.offcanvas-active{
 .ThibaultDevall:hover .onhoveNone{
     display: none;
 }
+
 /************************************************************************************************/
 /************************************************************************************************/
 @media (max-width: 992px) {
@@ -2365,6 +2012,439 @@ body.offcanvas-active{
     .aboutTeamBoxJobs h1, .aboutTeamBoxJobs p{
         text-align: center;
     }
+}
+/*************************************************************************************************************************/
+/************************************ MOBILE ********************************************************************/
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+@media(max-width:768px) {
+    .scrollHide,.scrollShow,.mobFrLang{
+        display: none!important;
+    }
+
+    .justify-content-end{
+        z-index: 1;
+    }
+
+
+    .julie-banner{
+        height: auto;
+        margin-bottom: 0px;
+        width: auto;
+    }
+    .julie-banner-left-header h1{
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        text-align: center;
+        font: 600 32px/38px Poppins;
+        letter-spacing: 0px;
+        color: #471E60;
+    }
+    .julie-banner-left-header p{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font: 300 14px/24px Montserrat;
+        letter-spacing: 0px;
+        color: #471E60;
+        opacity: 1;
+    }
+    .julie-banner-left-header .btn-freetrial{
+        width: 100%;
+        height: auto;
+        margin-top: 39px;
+        margin-left: 39px;
+    }
+    .julie-banner-right-content img{
+        height: auto;
+        width: auto;
+        margin-top: 50px;
+    }
+    .personalAssistant .button, .serviceslistsMain .button{
+        margin: 30px 64px
+    }
+    .personalAssistant h1{
+        text-align: center;
+        font: 700 24px/26px Poppins;
+        letter-spacing: 0px;
+        color: #4C2C64;
+        opacity: 1;
+        margin-top: 23px;
+    }
+    .personalAssistant h6{
+        text-align: center;
+        font: 600 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #FF6060;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+    .personalAssistant p{
+        text-align: center;
+        font: 300 14px/24px Poppins;
+        letter-spacing: 0px;
+        color: #2C3439;
+        opacity: 1;
+    }
+    .imgs img {
+        margin-right: 12px;
+        width: 27px;
+        height: 26px;
+    }
+    .btn-vedio{
+        margin: 35px;
+        float: left;
+    }
+    .trustus h1{
+        margin-top: 100px;
+        text-align: center;
+        font: 600 22px/38px Poppins;
+    }
+    .whatWedo,.comparsion-table-packname,.comparsion-table-price{
+        font: 600 14px/21px Poppins;
+    }
+    .personalAssistantLeft img, .communityManagerRight img, #carouselFeed, .IlluviolettaImgTop{
+        width: 100%;
+        height: auto;
+    }
+    .trustusbottom156{
+        margin-top: 40px;
+    }
+    .personalAssistantRight {
+        padding-left: 15px;
+        padding-top: 0;
+    }
+    .margingTop152{
+        margin-top: 100px;
+    }
+    .serviceslistsMain{
+        margin-bottom: 50px;
+    }
+    .communityManager .button{
+        margin: 64px;
+    }
+    .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem;
+        float:left;
+    }
+    .teddyPaulHero{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: unset;
+    }
+    .founderText{
+        font: 500 13px/9px Poppins;
+        text-align: left;
+        margin-left: 72px;
+        margin-top: -49px;
+    }
+    .foundationText{
+        font: 500 12px/16px Poppins;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-left: 72px;
+    }
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+
+    .carousel-indicators{
+        top: 329px;
+    }
+    .carousel-indicators li{
+        width: 6px;
+        height: 6px;
+    }
+    .hrdown{margin-top: 100px;}
+    .julie-footertop img{
+        float: left!important;
+    }
+    /*.julie-footertop h5 {*/
+    /*    text-align: center;*/
+    /*}*/
+    .julie-footertop-copyright{
+        height: 96px;
+        margin-bottom: -72px
+    }
+    .julie-footertop p{
+        text-align: left;
+        clear: both;
+        padding-top: 16px;
+        font: 600 14px/24px Muli;
+    }
+    .mobFoot{
+        width: 46%;
+        text-align: left;
+    }
+    .socialBack{
+        background: #EEE6FF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        width: 38px;
+        height: 38px;
+        text-align: center;
+        padding: 12px;
+        float: left;
+        font-size: 12px;
+        margin-right: 3px;
+    }
+
+    /******************************************************************************/
+    .packs-header-h1,.cmHead, .online-visibility-title,.packagesHead,.aboutValues{
+        font: 600 32px/38px Poppins!important;
+    }
+    .violetta-head-desc, .cmHead-p{
+        font: 300 14px/24px Montserrat;
+    }
+    .packagesHead-p,.enterprise-head, .aboutValuesP{
+        font: 300 16px/24px Montserrat!important;
+    }
+    .margintop106{
+        margin-top: 10px;
+    }
+    .packs-header-assist-h1,.cmPaulDo{
+        font: 700 24px/40px Poppins;
+    }
+    .teddy-top-heading-h1, .paul-skills-title,.jobforms-h1,.jobforms-h2,.teamPicsText,.aboutTeamBoxJobs h1{
+        font: 500 24px/40px Poppins!important;
+    }
+    .teddy-top-heading-desc,.teddy-top-heading-desc-green,.autofollow-desc,.teddy-matrix-desc,.paul-skills-desc,.cmPaulDo-desc,.cm-cards-text, .online-visibility-desc,.enterprise-body,.jobforms-p{
+        font: 300 14px/24px Poppins;
+    }
+
+    .secondImg {
+        position: absolute;
+        left: 26px;
+        top: 77px;
+        width: 300px;
+    }
+    .imgTeddyFirst{
+        width: 311px;
+    }
+    .matrix-img1{
+        width: 310px;
+    }
+    .matrix-img2{
+        left: inherit;
+        width: 300px;
+        top: 20px;
+        height: 100%;
+    }
+    .joinCm h1,.cm-cards-title{
+        font: 600 22px/38px Poppins;
+    }
+    .card-head-name{
+        text-align: left;
+        font: 700 18px/40px Montserrat;
+        letter-spacing: 0px;
+    }
+    .card-head-price{
+        font: 700 40px/20px Montserrat;
+    }
+    .card-head-des,.comparsion-table-desc,.option{
+        font: 500 12px/20px Montserrat;
+    }
+    .margintop140{
+        margin-top: unset;
+    }
+    .parentOrders{
+        display:flex;
+        flex-flow: column;
+    }
+    .order-1{
+        order:2;
+    }
+    .order-2{
+        order:1;
+    }
+    .teamPics img{
+        height: 300px;
+    }
+    /******************************************************************************/
+    .packs-header-h1,.packagesHead, .packagesHead-p, .package-main-container, .home-container, .enterprise, .enterprise-h5, .enterprise-head, .enterprise-body{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .enterprise-img {
+        position: relative;
+        left: 0;
+        top: 0px;
+        width: 94%;
+        margin-top: 50px;
+    }
+    .mobSet{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .packages-cards-footer,.creditdetails-desc,.trustus{
+        text-align: center;
+    }
+    .listsbody p{
+        margin-top: -26px;
+        margin-left: 22px;
+        font: 500 12px/20px Montserrat;
+    }
+    .btn-freetrial{
+        margin: auto;
+    }
+    .creditdetails-head{
+        margin-top: -32px;
+        text-align: center;
+    }
+    .enterprise{
+        margin-left: 7px;
+    }
+    .enterprise-h5, .enterprise-head, .enterprise-body{
+        padding-left: 0px;
+    }
+    /*********************************************************************************/
+    .cmHead, .cmHead-p, .cm-container, .cm-container-img,.cmPaulDo-desc, .cm-cards-text,.cm-cards-title, .paul-skills-title, .paul-skills-desc, .online-visibility-desc, .online-visibility, .joinCm{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .btnCenter{
+        justify-content: center;
+    }
+    .paul-img {
+        position: absolute;
+        right: -11px;
+        top: -64px;
+        width: 48%;
+    }
+    .margintop178,.margintop109{
+        margin-top: 20px;
+    }
+    .packs-assist-h1-top-bottom{
+        font: 400 22px/26px Poppins;
+    }
+    .julie-assist-para{
+        font: 400 12px/24px Poppins;
+    }
+    /*********************************************************************************/
+    .packs-head-h1, .packs-assist-h1-top-bottom, .julie-head-desc,.top35,.julie-head-imgs,
+    .julie-assist-para,.violetta-head-desc,.width476,.teddy-top-heading-h1,.autofollow-desc,
+    .teddy-matrix-desc,.jobforms-h1,.jobsAvail,.jobforms-h2,.jobforms-p,.width377,.login-temp-img-back{
+        text-align: center!important;
+        width: 100%;
+        height: auto;
+    }
+    .btn-vedio {
+        margin: 5px;
+        float: inherit;
+    }
+    .ourServices{
+        margin-bottom: 0px;
+        text-align: center;
+        font: 700 24px/40px Poppins;
+    }
+    .cmpa{
+        text-align: left;
+        font: 700 18px/40px Montserrat;
+        letter-spacing: 0px;
+    }
+    img{
+        width: inherit;
+    }
+    .listsbody img, .serviceslists img{
+        width: 18px!important;
+        height: 18px!important;
+    }
+    .serviceslists p{
+        font: 500 12px/20px Montserrat;
+        letter-spacing: 0px;
+        color: #471E60;
+        opacity: 1;
+        margin-top: -36px;
+        margin-left: 22px;
+        padding-top: 14px;
+    }
+    .package-button{
+        height: 42px;
+        padding: 11px 24px;
+    }
+    .package-button span{
+        font: 500 14px/21px Poppins;
+        letter-spacing: 0px;
+    }
+
+    .mobCmHide{
+        display: none;
+    }
+    .mobCmShow{
+        display: block;
+    }
+    .communityManager h1{
+        text-align: center;
+        font: 700 24px/28px Poppins;
+        letter-spacing: 0px;
+        opacity: 1;
+    }
+    .communityManager h6{
+        text-align: center;
+        font: 600 14px/21px Poppins;
+        letter-spacing: 0px;
+        color: #FF6060;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+    .communityManager p{
+        text-align: center;
+        font: 300 14px/24px Poppins;
+        letter-spacing: 0px;
+        color: #2C3439;
+        opacity: 1;
+    }
+    .imgs{
+        text-align: center;
+    }
+    .cm-button{
+        height: 42px;
+        padding: 11px 24px;
+    }
+    .cm-button span{
+        font: 500 14px/21px Poppins;
+        letter-spacing: 0px;
+    }
+    .feeback{
+        text-align: center;
+        font: 700 24px/35px Poppins;
+        letter-spacing: 0px;
+        opacity: 1;
+    }
+
+    .mobMargin50, .img-fluid{
+        margin-top: 50px;
+    }
+    .mobSize30{
+        width: 34px!important;
+        height: 34px!important;
+    }
+    .login-width{
+        width: max-content;
+    }
+    .freetrial-img {
+        position: unset;
+        left: 0;
+        width: inherit;
+    }
+
+    .btn-freetrial-text{
+        font: 500 14px/21px Poppins;
+    }
+
 }
 /* poppins-300 - latin */
 @font-face {
